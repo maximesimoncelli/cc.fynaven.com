@@ -23,4 +23,4 @@ jobs:
         run: pnpm install
 
       - name: Run check
-        run: pnpm check
+        run: pnpm ci:check
