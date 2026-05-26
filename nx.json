@@ -1,17 +1,28 @@
 {
   "$schema": "./node_modules/nx/schemas/nx-schema.json",
   "targetDefaults": {
-    "astro:build": { "outputs": ["{projectRoot}/dist"], "cache": true },
+    "astro:build": {
+      "outputs": ["{projectRoot}/dist"],
+      "cache": true
+    },
     "wrangler:generate-types": {
       "outputs": ["{projectRoot}/./worker-configuration.d.ts"],
       "cache": true
     },
-    "astro:check": { "cache": true },
-    "lint": { "cache": true },
-    "format": { "cache": true }
+    "astro:check": {
+      "cache": true
+    },
+    "lint": {
+      "cache": true
+    },
+    "format": {
+      "cache": true
+    }
   },
   "defaultBase": "trunk",
   "analytics": false,
-  "tui": { "enabled": false },
+  "tui": {
+    "enabled": false
+  },
   "nxCloudId": "6a15dabf3ee6b52fbbef4499"
 }
