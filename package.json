@@ -15,8 +15,8 @@
   "scripts": {
     "dev": "pnpm nx run -t astro:dev",
     "build": "pnpm nx run -t astro:build",
-    "check": "pnpm nx run -t full:check",
-    "ci:check": "pnpm nx run -t full:check",
+    "full:check": "pnpm nx run -t full:check",
+    "ci:check": "pnpm nx run -t ci:check",
     "prepare": "husky"
   },
   "dependencies": {
