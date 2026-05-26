@@ -15,6 +15,7 @@
   "scripts": {
     "dev": "pnpm nx run -t astro:dev",
     "build": "pnpm nx run -t astro:build",
+    "deploy": "pnpm nx run -t wrangler:deploy",
     "full:check": "pnpm nx run -t full:check",
     "ci:check": "pnpm nx run -t ci:check",
     "prepare": "husky"
@@ -37,6 +38,7 @@
   },
   "devDependencies": {
     "@types/masonry-layout": "^4.2.8",
+    "@types/node": "^25.9.1",
     "@typescript-eslint/parser": "^8.59.4",
     "eslint": "^10.4.0",
     "eslint-plugin-astro": "^1.7.0",
