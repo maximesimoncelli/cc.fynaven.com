@@ -1,5 +1,12 @@
 ---
-import { Link as LucideLink, Rss } from "@lucide/astro";
+import {
+  FolderGit,
+  FolderGit2,
+  GitBranch,
+  GitGraph,
+  Link as LucideLink,
+  Rss,
+} from "@lucide/astro";
 import Link from "./link.astro";
 ---
 
@@ -21,15 +28,21 @@ import Link from "./link.astro";
     >
   </p>
   <div class="mt-2 flex items-center gap-2">
-    <p>
+    <div>
       <Link href="https://links.fynaven.com" class="flex items-center gap-2"
         ><LucideLink /> Find me elsewhere</Link
       >
-    </p>
-    <p>
+    </div>
+    <div>
       <Link href="/rss.xml" class="flex items-center gap-2"
         ><Rss /> RSS feed</Link
       >
-    </p>
+    </div>
+    <div>
+      <Link
+        href="https://github.com/maximesimoncelli/cc.fynaven.com"
+        class="flex items-center gap-2"><GitGraph /> Source code</Link
+      >
+    </div>
   </div>
 </footer>

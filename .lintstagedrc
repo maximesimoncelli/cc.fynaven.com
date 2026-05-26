@@ -1,4 +1,4 @@
 {
-  "*.{js,ts,astro,vue}": ["eslint --fix", "pnpm ci:check"],
-  "*": ["prettier --write --ignore-unknown"]
+  "*.{js,ts,astro,vue}": ["pnpm nx run -t eslint:lint", "pnpm ci:check"],
+  "*": ["pnpm nx run -t prettier:format"]
 }

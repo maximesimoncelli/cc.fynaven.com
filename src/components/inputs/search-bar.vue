@@ -1,11 +1,9 @@
 <script setup lang="ts">
 import { navigate } from "astro:transitions/client";
 import { Search, X } from "@lucide/vue";
-import { ref, useTemplateRef, type VNodeRef, watch } from "vue";
+import { ref, watch } from "vue";
 
 const searchValue = ref(undefined);
-const searchBar = useTemplateRef("searchBar");
-const searchInput = useTemplateRef("searchInput");
 const error = ref(false);
 
 const navigateTo = async () => {
