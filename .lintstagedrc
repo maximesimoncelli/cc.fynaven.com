@@ -1,8 +1,4 @@
 {
-  "*.{js,ts,astro,vue}": [
-    "eslint --fix"
-  ],
-  "*": [
-    "prettier --write --ignore-unknown"
-  ]
+  "*.{js,ts,astro,vue}": ["eslint --fix"],
+  "*": ["prettier --write --ignore-unknown"]
 }
