@@ -40,5 +40,6 @@ src/content/packs/**/*.png
 # Local folders are unversioned by default
 .*/
 !.husky
+!.github
 !.vscode
 

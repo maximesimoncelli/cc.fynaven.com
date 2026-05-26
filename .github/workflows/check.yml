@@ -1,0 +1,26 @@
+name: Full Check
+
+on:
+  push:
+    branches: ["trunk"]
+  pull_request:
+    branches: ["trunk"]
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - uses: pnpm/action-setup@v6
+        name: Install pnpm
+        with:
+          cache: true
+
+      - name: Install dependencies
+        run: pnpm install
+
+      - name: Run check
+        run: pnpm check
