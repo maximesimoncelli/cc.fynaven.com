@@ -1,4 +1,4 @@
 {
-  "*.{js,ts,astro,vue}": ["eslint --fix"],
+  "*.{js,ts,astro,vue}": ["eslint --fix", "pnpm ci:check"],
   "*": ["prettier --write --ignore-unknown"]
 }
