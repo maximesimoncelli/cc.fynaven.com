@@ -1,0 +1,17 @@
+---
+import Grid from "../../components/grid.astro";
+import SearchBar from "../../components/inputs/search-bar.vue";
+import { getTaggedImagesForStaticPaths } from "../../entities/tags";
+import Layout from "../../layouts/Layout.astro";
+
+export async function getStaticPaths() {
+  return getTaggedImagesForStaticPaths();
+}
+
+const { tag, images } = Astro.props;
+---
+
+<Layout title={`#${tag.name.toLowerCase()}`}>
+  <SearchBar transition:persist client:load />
+  <Grid images={images} />
+</Layout>

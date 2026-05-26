@@ -1,0 +1,104 @@
+---
+import { Menu, X } from "@lucide/astro";
+import Link from "./link.astro";
+import Theme from "./theme.astro";
+
+const links = [
+  {
+    path: "/elements",
+    name: "Elements",
+  },
+  {
+    path: "/textures",
+    name: "Textures",
+  },
+  {
+    path: "/illustrations",
+    name: "Illustrations",
+  },
+  {
+    path: "/packs",
+    name: "Packs",
+  },
+  {
+    path: "/about",
+    name: "About",
+  },
+];
+---
+
+<header
+  id="header"
+  class="sticky top-0 z-50 flex items-center justify-between gap-8 border-b border-b-zinc-300 bg-zinc-50 px-6 py-4 backdrop-blur-md transition-[height] duration-600 ease-in-out dark:border-b-zinc-700 dark:bg-mist-950"
+>
+  <div class="flex items-center gap-2">
+    <Theme />
+    <Link
+      href="/"
+      underline={false}
+      class="font-flegrei text-xl font-bold tracking-widest"
+      id="header-logo"
+    >
+      CC0.FYNAVEN
+    </Link>
+  </div>
+  <nav
+    class="hidden gap-2 text-sm md:flex md:items-center md:gap-4 lg:gap-6 lg:text-base"
+  >
+    {links.map((link) => <Link href={link.path}>{link.name}</Link>)}
+  </nav>
+  <Menu size="16" class="mobile-menu-toggle cursor-pointer md:hidden" />
+  <div
+    class="fixed top-0 left-0 z-10 hidden h-lvh w-full flex-col bg-white dark:bg-mist-950"
+    id="mobile-menu"
+  >
+    <div
+      class="sticky top-0 z-50 mb-8 flex items-center justify-between border-b bg-white px-6 py-4 backdrop-blur-md dark:bg-mist-950"
+    >
+      <div class="flex items-center gap-2">
+        <Theme />
+        <Link
+          href="/"
+          class="font-flegrei text-xl font-bold tracking-widest"
+          id="header-logo"
+        >
+          CC0.FYNAVEN
+        </Link>
+      </div>
+      <X size="16" class="mobile-menu-toggle cursor-pointer" />
+    </div>
+
+    <nav class="flex flex-col items-center gap-6">
+      {links.map((link) => <Link href={link.path}>{link.name}</Link>)}
+    </nav>
+  </div>
+</header>
+
+<script>
+  document.addEventListener("astro:page-load", () => {
+    toggleMobileMenu();
+    closeMobileMenu();
+  });
+
+  function toggleMobileMenu() {
+    const toggles = document.querySelectorAll(".mobile-menu-toggle");
+    const mobileMenu = document.querySelector("#mobile-menu");
+
+    for (let toggle of toggles) {
+      toggle.addEventListener("click", () => {
+        mobileMenu?.classList.toggle("hidden");
+        mobileMenu?.classList.toggle("flex");
+      });
+    }
+  }
+
+  function closeMobileMenu() {
+    const toggles = document.getElementsByClassName("mobile-menu-toggle");
+    const mobileMenu = document.getElementById("mobile-menu");
+
+    for (let _ of toggles) {
+      mobileMenu?.classList.add("hidden");
+      mobileMenu?.classList.remove("flex");
+    }
+  }
+</script>

@@ -1,0 +1,45 @@
+---
+import { Image } from "astro:assets";
+import socialSharing from "../assets/social-sharing-portrait.jpg";
+import Link from "../components/link.astro";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="About">
+  <div class="flex flex-col items-start gap-8 lg:flex-row">
+    <Image
+      src={socialSharing}
+      alt="A picture of presentation of this site."
+      loading={"eager"}
+      class="w-full lg:w-6/12"
+      width={1023}
+    />
+    <div class="sticky top-14.75 flex flex-col gap-4">
+      <p>
+        This website is entirely free and everything is <Link
+          href="https://creativecommons.org/publicdomain/zero/1.0/deed.en"
+          >CC0 licensed.</Link
+        >
+        This means that you can do whatever you want with the pictures shared on this
+        website. They are directly scanned by me using items in my collection (i.e.
+        that I bought or legally acquired) or images I created myself. Evidently,
+        nothing here is made using A.I.
+      </p>
+      <p>
+        You can download single files from this site if you're only interested
+        in select pieces, or you can head to the pack linked in each image page
+        if you're interested in the entire sets!
+      </p>
+      <p>
+        If you want to support me and help me keep doing these, <Link
+          href="https://ko-fi.com/sylfvr"
+        >
+          you can send me a tip
+        </Link> or you can <Link href="https://links.fynaven.com"
+          >find me elsewhere</Link
+        >! 🧡
+      </p>
+      <p></p>
+    </div>
+  </div>
+</Layout>

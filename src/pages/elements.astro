@@ -1,0 +1,11 @@
+---
+import Grid from "../components/grid.astro";
+import { getImagesOfType } from "../entities/images";
+import Layout from "../layouts/Layout.astro";
+
+const images = await getImagesOfType("elements");
+---
+
+<Layout title="Elements">
+  <Grid images={images} />
+</Layout>

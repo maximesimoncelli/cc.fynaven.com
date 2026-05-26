@@ -1,0 +1,59 @@
+---
+import { Moon, Star, Sun } from "@lucide/astro";
+---
+
+<div data-theme="dark" class="group relative dark:hidden">
+  <Moon rotate={90} class="cursor-pointer" stroke={"#7c7c67"} />
+  <Star
+    class="invisible absolute top-2 left-1 opacity-0 transition duration-600 ease-out group-hover:visible group-hover:translate-x-2 group-hover:-translate-y-2 group-hover:translate-z-2 group-hover:opacity-50"
+    size={8}
+    fill={"#7c7c67"}
+    stroke={"#7c7c67"}
+  />
+</div>
+<div data-theme="light" class="group hidden dark:block">
+  <Sun class="cursor-pointer" />
+</div>
+
+<script>
+  document.addEventListener("astro:page-load", () => {
+    const darkSwitchs = document.querySelectorAll("[data-theme=dark]");
+    const lightSwitchs = document.querySelectorAll("[data-theme=light]");
+
+    const applyTheme = (theme: "dark" | "light") => {
+      if (theme === "dark") {
+        document.documentElement.classList.add("dark");
+        document.documentElement.classList.remove("light");
+      } else {
+        document.documentElement.classList.remove("dark");
+        document.documentElement.classList.add("light");
+      }
+      window.localStorage.setItem("theme", theme);
+    };
+
+    const switchTheme = (event: Event) => {
+      const clickedId = (event.currentTarget as HTMLElement).dataset.theme;
+      if (clickedId === "dark") {
+        applyTheme("dark");
+      } else if (clickedId === "light") {
+        applyTheme("light");
+      }
+    };
+
+    for (let darkSwitch of darkSwitchs) {
+      darkSwitch.addEventListener("click", switchTheme);
+    }
+    for (let lightSwitch of lightSwitchs) {
+      lightSwitch.addEventListener("click", switchTheme);
+    }
+
+    for (let lightSwitch of lightSwitchs) {
+      lightSwitch.addEventListener("mouseenter", () => {
+        lightSwitch.classList.toggle("animate-spin");
+        setTimeout(() => {
+          lightSwitch.classList.toggle("animate-spin");
+        }, 600);
+      });
+    }
+  });
+</script>

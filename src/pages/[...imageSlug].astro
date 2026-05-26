@@ -1,0 +1,161 @@
+---
+import { getImage, Image } from "astro:assets";
+import { PUBLIC_MEDIA_URL } from "astro:env/client";
+import {
+  Asterisk,
+  Calendar,
+  CircleQuestionMark,
+  Link2,
+  OrigamiIcon,
+  Palette,
+  Plus,
+  Ruler,
+  Save,
+  Tag,
+  TextAlignStart,
+} from "@lucide/astro";
+import Contraster from "../components/contraster.astro";
+import Link from "../components/link.astro";
+import Bold from "../components/text/bold.astro";
+import dustTexture from "../content/packs/texture-pack-2-dust/files/dust-texture-10.jpg";
+import { getImageForStaticPath } from "../entities/images";
+import Layout from "../layouts/Layout.astro";
+
+export async function getStaticPaths() {
+  return getImageForStaticPath();
+}
+
+const { img, collection, tags } = Astro.props;
+
+const downloadLink = new URL(
+  `${collection.slug}/${img.slug}.${img.link.format}`,
+  PUBLIC_MEDIA_URL,
+);
+
+const dustProcessed = await getImage({ src: dustTexture, width: 400 });
+const title = `${img.name} - ${collection.source}`;
+---
+
+<Layout title={title} socialSharingOverride={img.link}>
+  <Contraster transition:persist />
+  <div class="mx-auto flex max-w-7xl flex-col items-start gap-8 md:flex-row">
+    <div class="flex w-full flex-col gap-4 md:w-6/12">
+      <Image
+        src={img.link}
+        alt={img.description}
+        style={img.link.format === "png"
+          ? `background: url(${dustProcessed.src}); background-size: auto;`
+          : ""}
+        layout="constrained"
+        width={780}
+        class="image mx-auto h-auto rounded-xs object-contain md:max-h-dvh"
+      />
+      <Link
+        class="flex items-center gap-2 text-sm"
+        href={`/packs/${collection.slug}`}
+        ><Plus /> Pack link: {collection.title}</Link
+      >
+      <Link
+        class="flex items-center gap-2 text-sm"
+        href={downloadLink.toString()}><Save /> Download link (Full Size)</Link
+      >
+      <Link
+        class="flex items-center gap-2 text-sm"
+        href={`https://bsky.app/intent/compose?text=${img.name} - ${collection.source}%0A%0A${Astro.url}`}
+        ><Link2 /> Share on Bluesky</Link
+      >
+      <Link href="/about" class="mb-4 flex items-center gap-2 text-sm"
+        ><CircleQuestionMark />What is CC0?</Link
+      >
+    </div>
+
+    <div class="flex w-full grow flex-col gap-4 md:w-6/12">
+      <div class="flex flex-col gap-2">
+        <div class="flex items-center gap-2">
+          <Calendar />
+          <Bold>Published on this site</Bold>
+        </div>
+        {collection.publishedAt}
+      </div>
+      <div class="flex flex-col gap-2">
+        <div class="flex items-center gap-2">
+          <OrigamiIcon />
+          <Bold>Source</Bold>
+        </div>
+        {img.source ?? collection.source}
+      </div>
+
+      {
+        img.artists ? (
+          <div class="flex flex-col gap-2">
+            <div class="flex items-center gap-2">
+              <Palette />
+              <Bold>Artist{img.artists.length > 1 ? "s" : ""}</Bold>
+            </div>
+
+            <div class="flex gap-2">
+              {img.artists.map((artist) => (
+                <Link href={`/artists/${artist.slug}`}>
+                  {artist.name} ({artist.role})
+                </Link>
+              ))}
+            </div>
+          </div>
+        ) : (
+          ""
+        )
+      }
+      <div class="flex flex-col gap-2">
+        <div class="flex items-center gap-2">
+          <TextAlignStart /><Bold>Description</Bold>
+        </div>
+        <p>{img.description}</p>
+      </div>
+      <div class="flex flex-col gap-2">
+        <div class="flex items-center gap-2">
+          <Ruler />
+          <Bold>Dimensions</Bold>
+        </div>
+        <div class="flex flex-col gap-1">
+          <span>
+            Width: {img.link.width}px
+          </span>
+          <span>
+            Height: {img.link.height}px
+          </span>
+        </div>
+      </div>
+      <div class="flex flex-col gap-2">
+        <div class="flex items-center gap-2">
+          <Asterisk />
+          <Bold>Image extension</Bold>
+        </div>
+        <div>.{img.link.format}</div>
+      </div>
+      <div class="flex flex-col gap-2">
+        <div class="flex items-center gap-2">
+          <Tag />
+          <Bold>Type</Bold>
+        </div>
+        <Link href={`/${collection.type}`} class="capitalize"
+          >{collection.type}</Link
+        >
+      </div>
+      <div class="flex flex-col gap-2">
+        <div class="flex items-center gap-2">
+          <Tag />
+          <Bold>Tags</Bold>
+        </div>
+        <div class="flex flex-wrap items-center gap-1">
+          {
+            tags.map((tag) => (
+              <Link href={`/tags/${tag.id}`} class="capitalize">
+                <span class="lowercase">#{tag.name}</span>
+              </Link>
+            ))
+          }
+        </div>
+      </div>
+    </div>
+  </div>
+</Layout>

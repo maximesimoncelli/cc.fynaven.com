@@ -1,0 +1,55 @@
+{
+  "name": "cc.fynaven.com",
+  "type": "module",
+  "author": {
+    "email": "contact.cc0@fynaven.com",
+    "name": "Maxime Simoncelli",
+    "url": "https://cc0.fynaven.com"
+  },
+  "version": "1.0.0",
+  "license":"GPL-3.0-only",
+  "engines": {
+    "node": ">=24.9.0"
+  },
+  "packageManager": "pnpm@11.1.1",
+  
+  "scripts": {
+    "dev": "pnpm nx run -t astro:dev",
+    "build": "pnpm nx run -t astro:build",
+    "check": "pnpm nx run -t full:check",
+    "prepare": "husky"
+  },
+  "dependencies": {
+    "@astrojs/check": "^0.9.9",
+    "@astrojs/cloudflare": "^13.5.4",
+    "@astrojs/rss": "^4.0.18",
+    "@astrojs/sitemap": "^3.7.2",
+    "@astrojs/vue": "^6.0.1",
+    "@lucide/astro": "^1.16.0",
+    "@lucide/vue": "^1.16.0",
+    "@tailwindcss/vite": "^4.3.0",
+    "astro": "^6.3.7",
+    "masonry-layout": "^4.2.2",
+    "tailwindcss": "^4.3.0",
+    "typescript": "^6.0.3",
+    "vue": "^3.5.34",
+    "wrangler": "^4.94.0"
+  },
+  "devDependencies": {
+    "@types/masonry-layout": "^4.2.8",
+    "@typescript-eslint/parser": "^8.59.4",
+    "eslint": "^10.4.0",
+    "eslint-plugin-astro": "^1.7.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^17.0.5",
+    "nx": "22.7.3",
+    "prettier": "3.8.3",
+    "prettier-plugin-astro": "0.14.1",
+    "prettier-plugin-tailwindcss": "0.8.0",
+    "sharp": "^0.34.5",
+    "vite": "^7.3.3"
+  },
+  "overrides": {
+    "vite": "^7"
+  }
+}

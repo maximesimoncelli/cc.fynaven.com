@@ -1,0 +1,44 @@
+# build output
+dist/
+
+# generated types
+.astro/
+worker-configuration.d.ts
+
+# dependencies
+node_modules/
+
+# logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# environment variables
+.env
+.env.development
+.env.production
+
+# macOS-specific files
+.DS_Store
+
+# jetbrains setting folder
+.idea/
+
+# Cloudflare
+.wrangler
+wrangler.jsonc
+
+# Scripts
+upload-to-r2.mjs
+
+
+# Large Images
+src/content/packs/**/*.jpg
+src/content/packs/**/*.png
+
+# Local folders are unversioned by default
+.*/
+!.husky
+!.vscode
+

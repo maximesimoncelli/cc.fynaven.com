@@ -1,0 +1,67 @@
+---
+import { getImage, Image } from "astro:assets";
+import dustTexture from "../content/packs/texture-pack-2-dust/files/dust-texture-10.jpg";
+import type { BusinessLayerImage } from "../entities/images";
+import Contraster from "./contraster.astro";
+
+interface Props {
+  images: BusinessLayerImage[];
+  columns?: 1 | 2 | 3 | 4;
+}
+
+const { images, columns = 4 } = Astro.props;
+
+const dustProcessed = await getImage({ src: dustTexture, width: 400 });
+
+const numberOfColumns = {
+  1: "w-[calc(100%)]",
+  2: "w-[calc(50%-10px)] md:w-[calc(50%-10px)] lg:w-[calc(50%-10px)]",
+  3: "w-[calc(50%-10px)] md:w-[calc(33.33333%-10px)] lg:w-[calc(33.33333%-10px)]",
+  4: "w-[calc(50%-10px)] md:w-[calc(33.33333%-10px)] lg:w-[calc(25%-10px)]",
+};
+---
+
+<div class="flex flex-col">
+  <Contraster transition:persist />
+  <div class="masonry flex w-full gap-2">
+    {
+      images.map((image) => (
+        <a
+          class="group grid-item mb-2.5 flex"
+          class:list={numberOfColumns[columns]}
+          href={`/${image.packSlug}/${image.slug}`}
+        >
+          <div class="absolute z-2 bg-olive-400 p-2 text-sm text-olive-100 opacity-0 transition-opacity group-hover:opacity-100 dark:text-olive-300 dark:group-hover:bg-mist-800">
+            {image.name}
+          </div>
+          <Image
+            class="image max-h-300 w-full object-contain group-hover:brightness-110"
+            style={
+              image.link.format === "png"
+                ? `background: url(${dustProcessed.src}); background-size: auto;`
+                : ""
+            }
+            src={image.link}
+            alt={image.name}
+            width={400}
+            quality={80}
+            layout="constrained"
+            loading="lazy"
+          />
+        </a>
+      ))
+    }
+  </div>
+</div>
+
+<script>
+  import Masonry from "masonry-layout";
+
+  document.addEventListener("astro:page-load", () => {
+    new Masonry(".masonry", {
+      itemSelector: ".grid-item",
+      percentPosition: true,
+      gutter: 10,
+    });
+  });
+</script>

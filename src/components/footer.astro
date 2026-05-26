@@ -1,0 +1,35 @@
+---
+import { Link as LucideLink, Rss } from "@lucide/astro";
+import Link from "./link.astro";
+---
+
+<footer class="flex flex-col items-center justify-center px-6 py-8 text-xs">
+  <p>
+    &copy; {new Date().getFullYear()} CC.FYNAVEN. All rights reserved.
+  </p>
+  <p>
+    This website is entirely free and everything is <Link href="/about"
+      >CC0 licensed.</Link
+    >
+  </p>
+
+  <p>
+    If you want to support me and help me keep doing these, <Link
+      href="https://ko-fi.com/sylfvr"
+    >
+      a tip goes a long way 🧡</Link
+    >
+  </p>
+  <div class="mt-2 flex items-center gap-2">
+    <p>
+      <Link href="https://links.fynaven.com" class="flex items-center gap-2"
+        ><LucideLink /> Find me elsewhere</Link
+      >
+    </p>
+    <p>
+      <Link href="/rss.xml" class="flex items-center gap-2"
+        ><Rss /> RSS feed</Link
+      >
+    </p>
+  </div>
+</footer>

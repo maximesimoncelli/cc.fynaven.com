@@ -1,0 +1,224 @@
+{
+  "cover": "./cover.jpg",
+  "downloadLink": "https://ko-fi.com/s/4736ee6990",
+  "images": [
+    {
+      "description": "An illustration of a hot-air balloon soaring high above a sea of clouds under a clear sky.",
+      "link": "./files/astronomy-id-8-balloon-in-the-clouds.jpg",
+      "name": "Balloon in the Clouds",
+      "slug": "astronomy-id-8-balloon-in-the-clouds",
+      "tags": [
+        "illustration",
+        "balloon",
+        "clouds",
+        "astronomy",
+        "sky",
+        "black-and-white",
+        "sunny"
+      ]
+    },
+    {
+      "description": "An illustration depicting the planet Earth as seen from the surface of Venus bright Earth in a dark sky above a rocky Venusian landscape.",
+      "link": "./files/astronomy-id-1-earth-from-venus.png",
+      "name": "Earth from Venus",
+      "slug": "astronomy-id-1-earth-from-venus",
+      "tags": [
+        "illustration",
+        "astronomy",
+        "sky",
+        "mountains",
+        "venus",
+        "earth",
+        "etching",
+        "black-and-white",
+        "engraving"
+      ]
+    },
+    {
+      "artists": [
+        {
+          "name": "Charles Joseph Mettais",
+          "role": "Engraver",
+          "slug": "charles-joseph-mettais"
+        }
+      ],
+      "description": "A pensive man pointing to the page of a massive tome that reads 'JOVIS' with schemas and undecipherable scribbles. He is sitting in a room with open windows, probably at dusk, but this could simply be the result of the very dark tones of the etching.",
+      "link": "./files/astronomy-id-11-jupiter-charles-joseph-mettais.jpg",
+      "name": "Jupiter",
+      "slug": "astronomy-id-11-jupiter-charles-joseph-mettais",
+      "tags": [
+        "illustration",
+        "architecture",
+        "pillars",
+        "jupiter",
+        "astronomy",
+        "man",
+        "contrasted",
+        "night",
+        "dusk",
+        "scholar",
+        "book",
+        "drapery"
+      ]
+    },
+    {
+      "artists": [
+        {
+          "name": "Kemplen, JC",
+          "role": "Engraver",
+          "slug": "kemplen-jc"
+        }
+      ],
+      "description": "An illustration of what looks like the surface of Saturn, with the rigns visible in the cloud sky. The sun can be spotted on the top right handcorner. Rocky formations can be seen below the horizon line.",
+      "link": "./files/astronomy-id-13-saturn.jpg",
+      "name": "Saturn",
+      "slug": "astronomy-id-13-saturn",
+      "tags": [
+        "illustration",
+        "planet",
+        "saturn",
+        "rings",
+        "planetary-rings",
+        "rocks",
+        "desert",
+        "clouds",
+        "engraving",
+        "etching",
+        "astronomy",
+        "sky"
+      ]
+    },
+    {
+      "artists": [
+        {
+          "name": "Paul Fouché",
+          "role": "Engraver",
+          "slug": "paul-fouche"
+        }
+      ],
+      "description": "An illustration of a starry sky at night. Some clouds can be seen at the bottom.",
+      "link": "./files/astronomy-id-9-starry-sky.jpg",
+      "name": "Starry Sky",
+      "slug": "astronomy-id-9-starry-sky",
+      "tags": [
+        "illustration",
+        "stars",
+        "night",
+        "clouds",
+        "astronomy",
+        "milky-way"
+      ]
+    },
+    {
+      "artists": [
+        {
+          "name": "Régnier-Brabant",
+          "role": "Engraver",
+          "slug": "regnier-brabant"
+        }
+      ],
+      "description": "The earth as seen from the moon. Sharp mountains make up most of the surface of the moon here, with the earth bright in the sky.",
+      "link": "./files/astronomy-id-7-the-earth-seen-from-the-moon-regnier-barbant.jpg",
+      "name": "The Earth, Seen From the Moon",
+      "slug": "astronomy-id-7-the-earth-seen-from-the-moon-regnier-barbant",
+      "tags": [
+        "illustration",
+        "moon",
+        "on-the-moon",
+        "earth",
+        "desert",
+        "mountains",
+        "astronomy"
+      ]
+    },
+    {
+      "description": "A diagram representing the division of the hours of the day and night superimposed over the earth.",
+      "link": "./files/astronomy-id-2-the-hours-of-day-and-night.png",
+      "name": "The Hours of Day and Night",
+      "slug": "astronomy-id-2-the-hours-of-day-and-night",
+      "tags": ["illustration"]
+    },
+    {
+      "artists": [
+        {
+          "name": "Carl Gustav Carus",
+          "role": "Probable original painter",
+          "slug": "carl-gustav-carus"
+        }
+      ],
+      "description": "A romantic and atmospheric painting showing a ruined structure illuminated by the soft light of the Moon in a quiet landscape.",
+      "link": "./files/astronomy-id-14-the-light-of-the-moon-prefers-the-company-of-ruins-and-solitudes-carl-gustav-carus.jpg",
+      "name": "The Light of the Moon Prefers the Company of Ruins and Solitudes",
+      "slug": "astronomy-id-14-the-light-of-the-moon-prefers-the-company-of-ruins-and-solitudes-carl-gustav-carus",
+      "tags": ["illustration"]
+    },
+    {
+      "description": "The moon seen from the earth, partially hidden by clouds at dusk. The scene seems to depict a lake scene with a mountainous backdrop. Boats seem to be represented on the lake.",
+      "link": "./files/astronomy-id-6-the-moon.jpg",
+      "name": "The Moon",
+      "slug": "astronomy-id-6-the-moon",
+      "tags": ["illustration"]
+    },
+    {
+      "artists": [
+        {
+          "name": "Kemplen, JC",
+          "role": "Engraver",
+          "slug": "kemplen-jc"
+        }
+      ],
+      "description": "A detailed engraving of the earth showing the North Pole, Europe, the Arabic Peninsula, Africa and parts of the American continent.",
+      "link": "./files/astronomy-id-3-the-earth-kemplen-jc.png",
+      "name": "The Earth",
+      "slug": "astronomy-id-3-the-earth-kemplen-jc",
+      "tags": ["illustration"]
+    },
+    {
+      "artists": [
+        {
+          "name": "Charles Joseph Mettais",
+          "role": "Engraver",
+          "slug": "charles-joseph-mettais"
+        }
+      ],
+      "description": "An astronomical illustration of the Southern Cross constellation (Crux) shining brightly in the night sky.",
+      "link": "./files/astronomy-id-10-the-southern-cross.jpg",
+      "name": "The Southern Cross",
+      "slug": "astronomy-id-10-the-southern-cross",
+      "tags": ["illustration"]
+    },
+    {
+      "description": "An illustration depicting the effects of the tide on the sea. Or rather, that's what I suppose it shows, as a beach can be seen with several silhouettes. This natural cove is surrounded by very sharp cliffs and peaks.",
+      "link": "./files/astronomy-id-4-the-tides.png",
+      "name": "The Tides",
+      "slug": "astronomy-id-4-the-tides",
+      "tags": ["illustration"]
+    },
+    {
+      "description": "A small representation of two celestial bodies, with a smaller one orbiting a larger one.",
+      "link": "./files/astronomy-id-5-theory-of-the-formation-of-the-earth.jpg",
+      "name": "Theory of the Formation of the Earth",
+      "slug": "astronomy-id-5-theory-of-the-formation-of-the-earth",
+      "tags": ["illustration"]
+    },
+    {
+      "artists": [
+        {
+          "name": "Régnier-Brabant",
+          "role": "Engraver",
+          "slug": "regnier-brabant"
+        }
+      ],
+      "description": "A dramatic engraving depicting the corona and solar prominences visible during a total solar eclipse.",
+      "link": "./files/astronomy-id-12-total-eclipse-of-the-sun-regnier-barbant.jpg",
+      "name": "Total Eclipse of the Sun",
+      "slug": "astronomy-id-12-total-eclipse-of-the-sun-regnier-barbant",
+      "tags": ["illustration"]
+    }
+  ],
+  "publishedAt": "2026-05-22",
+  "slug": "illustration-pack-1-astronomy",
+  "source": "Astronomie Populaire, by Camille Flammarion, 1880.",
+  "title": "Illustration Pack 1 - Astronomy",
+  "type": "illustrations"
+}

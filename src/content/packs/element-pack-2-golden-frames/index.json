@@ -1,0 +1,143 @@
+{
+  "title": "Element Pack 2 - Golden Frames",
+  "slug": "element-pack-2-golden-frames",
+  "type": "elements",
+  "source": "Old books covers.",
+  "cover": "./cover.jpg",
+  "downloadLink": "https://ko-fi.com/s/80cf13ccd5",
+  "publishedAt": "2025-09-28",
+  "images": [
+    {
+      "link": "./files/golden-frame-1.png",
+      "slug": "golden-frame-1",
+      "name": "Golden Frame 1",
+      "tags": [
+        "element",
+        "gold",
+        "frame",
+        "floral",
+        "yellow",
+        "circular",
+        "intricate",
+        "detailed",
+        "decorative",
+        "asymmetrical"
+      ],
+      "source": "Lord Byron's 'Poetical Works'. Published ? by Leighton, Son & Hodge.",
+      "description": "A circular golden frame with heavy classical ornamentations and a shiny metallic finish."
+    },
+    {
+      "link": "./files/golden-frame-2.png",
+      "slug": "golden-frame-2",
+      "name": "Golden Frame 2",
+      "tags": [
+        "element",
+        "gold",
+        "frame",
+        "yellow",
+        "simple",
+        "rectangular",
+        "symmetrical"
+      ],
+      "description": "A fairly simple golden double border."
+    },
+    {
+      "link": "./files/golden-frame-3.png",
+      "slug": "golden-frame-3",
+      "name": "Golden Frame 3",
+      "tags": [
+        "element",
+        "gold",
+        "frame",
+        "floral",
+        "yellow",
+        "rectangular",
+        "intricate",
+        "detailed",
+        "decorative",
+        "large",
+        "serpentine",
+        "symmetrical"
+      ],
+      "source": "",
+      "description": "An ornate frame with a vine or otherwise serpentine fauna or flora wrapped around a central pillar around the frame."
+    },
+    {
+      "link": "./files/golden-frame-4.png",
+      "slug": "golden-frame-4",
+      "name": "Golden Frame 4",
+      "tags": [
+        "element",
+        "gold",
+        "frame",
+        "yellow",
+        "rectangular",
+        "intricate",
+        "detailed",
+        "decorative",
+        "large",
+        "symmetrical"
+      ],
+      "description": "A golden frame made of a large border ornated with flourishes."
+    },
+    {
+      "link": "./files/golden-frame-5.png",
+      "slug": "golden-frame-5",
+      "name": "Golden Frame 5",
+      "tags": [
+        "element",
+        "gold",
+        "frame",
+        "floral",
+        "yellow",
+        "flourishes",
+        "circular",
+        "intricate",
+        "detailed",
+        "decorative",
+        "symmetrical"
+      ],
+      "description": "A rounded cross frame with orante and symmetrical circular patterns."
+    },
+    {
+      "link": "./files/golden-frame-6.png",
+      "slug": "golden-frame-6",
+      "name": "Golden Frame 6",
+      "tags": [
+        "element",
+        "gold",
+        "frame",
+        "yellow",
+        "rectangular",
+        "intricate",
+        "detailed",
+        "decorative",
+        "large",
+        "symmetrical",
+        "cornucopia",
+        "cherub",
+        "face",
+        "fruit"
+      ],
+      "description": "A richly decorated and illustrated frame with very thick borders."
+    },
+    {
+      "link": "./files/golden-frame-7.png",
+      "slug": "golden-frame-7",
+      "name": "Golden Frame 7",
+      "tags": [
+        "element",
+        "gold",
+        "frame",
+        "yellow",
+        "rectangular",
+        "intricate",
+        "detailed",
+        "decorative",
+        "large",
+        "symmetrical"
+      ],
+      "description": "A frame showing a weathered gold patina and elegant border designs, consisting of triangular flourishes all around the frame"
+    }
+  ]
+}

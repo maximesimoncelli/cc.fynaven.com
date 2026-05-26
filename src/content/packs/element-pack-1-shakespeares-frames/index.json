@@ -1,0 +1,164 @@
+{
+  "title": "Element Pack 1 - Shakespeare's Frames",
+  "slug": "element-pack-1-shakespeares-frames",
+  "type": "elements",
+  "source": "Shakespeare - Théâtre Complet (Éditions Favot 1975). Credits mentions that the illustrations come from books from various national library without details.",
+  "cover": "./cover.jpg",
+  "downloadLink": "https://ko-fi.com/s/6ae049f909",
+  "publishedAt": "2025-09-21",
+  "images": [
+    {
+      "link": "./files/complex-frame.png",
+      "slug": "complex-frame",
+      "name": "Complex Frame",
+      "tags": [
+        "element",
+        "frame",
+        "intricate",
+        "decorative",
+        "woodcut",
+        "floral",
+        "rectangular",
+        "symmetrical"
+      ],
+      "description": "An intricate, highly decorative woodcut border frame featuring vintage renaissance floral motifs."
+    },
+    {
+      "link": "./files/flourish.png",
+      "slug": "flourish",
+      "name": "Flourish",
+      "tags": [
+        "element",
+        "frame",
+        "simple",
+        "decorative",
+        "woodcut",
+        "floral",
+        "symmetrical"
+      ],
+      "description": "A decorative typographic flourish used for text separation and ornamentation."
+    },
+    {
+      "link": "./files/horned-cornucopias-frame.png",
+      "slug": "horned-cornucopias-frame",
+      "name": "Horned Cornucopias Frame",
+      "tags": [
+        "element",
+        "frame",
+        "intricate",
+        "decorative",
+        "woodcut",
+        "floral",
+        "cornucopias",
+        "symmetrical"
+      ],
+      "description": "A classic ornamental border featuring horned cornucopias spilling fruits and foliage."
+    },
+    {
+      "link": "./files/minimal-frame.png",
+      "slug": "minimal-frame",
+      "name": "Minimal Frame",
+      "tags": ["element", "simple", "frame", "rectangular", "symmetrical"],
+      "description": "A simple rectangular frame."
+    },
+    {
+      "link": "./files/separator-1.png",
+      "slug": "separator-1",
+      "name": "Separator 1",
+      "tags": [
+        "element",
+        "separator",
+        "ornament",
+        "intricate",
+        "floral",
+        "face",
+        "symmetrical"
+      ],
+      "description": "An ornate horizontal text divider block featuring classic floral designs."
+    },
+    {
+      "link": "./files/separator-2.png",
+      "slug": "separator-2",
+      "name": "Separator 2",
+      "tags": [
+        "element",
+        "separator",
+        "ornament",
+        "intricate",
+        "floral",
+        "face",
+        "symmetrical"
+      ],
+      "description": "A detailed horizontal text decoration with symmetrical leaf patterns, an ornate crown and what looks like thistles."
+    },
+    {
+      "link": "./files/separator-3.png",
+      "slug": "separator-3",
+      "name": "Separator 3",
+      "tags": [
+        "element",
+        "separator",
+        "ornament",
+        "intricate",
+        "floral",
+        "face",
+        "rectangular",
+        "symmetrical"
+      ],
+      "description": "A rectangular typographic border element designed for separating sections of text."
+    },
+    {
+      "link": "./files/top-frame.png",
+      "slug": "top-frame",
+      "name": "Top Frame",
+      "tags": [
+        "element",
+        "frame",
+        "half-frame",
+        "decorative",
+        "floral",
+        "ornament",
+        "intricate"
+      ],
+      "description": "An open frame header illustration."
+    },
+    {
+      "link": "./files/vase.png",
+      "slug": "vase",
+      "name": "Vase",
+      "tags": [
+        "element",
+        "vase",
+        "intricate",
+        "decorative",
+        "floral",
+        "flowers",
+        "sunflower"
+      ],
+      "description": "A classic woodcut illustration of an ornamental vase holding decorative foliage."
+    },
+    {
+      "link": "./files/vertical-separator.png",
+      "slug": "vertical-separator",
+      "name": "Vertical Separator",
+      "tags": [
+        "element",
+        "separator",
+        "vertical",
+        "detailed",
+        "decorative",
+        "intricate",
+        "floral",
+        "symmetrical"
+      ],
+      "description": "A slender vertical decorative border element for separating columns or margins."
+    },
+    {
+      "link": "./files/w-drop-capital.png",
+      "slug": "w-drop-capital",
+      "name": "W Drop Capital",
+      "tags": ["element"],
+      "description": "A richly decorated drop capital letter 'W'."
+    }
+  ]
+}

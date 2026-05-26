@@ -1,0 +1,15 @@
+---
+import Grid from "../../components/grid.astro";
+import { getArtistsForStaticPaths } from "../../entities/artists";
+import Layout from "../../layouts/Layout.astro";
+
+export async function getStaticPaths() {
+  return getArtistsForStaticPaths();
+}
+
+const { images, artist } = Astro.props;
+---
+
+<Layout title={artist.name}>
+  <Grid images={images} />
+</Layout>

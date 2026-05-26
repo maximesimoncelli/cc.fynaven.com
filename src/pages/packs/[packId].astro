@@ -1,0 +1,60 @@
+---
+import { Image } from "astro:assets";
+import { Calendar, OrigamiIcon, Save, Tag } from "@lucide/astro";
+import Grid from "../../components/grid.astro";
+import Link from "../../components/link.astro";
+import Bold from "../../components/text/bold.astro";
+import { getPackForStaticPath } from "../../entities/images";
+import Layout from "../../layouts/Layout.astro";
+
+export function getStaticPaths() {
+  return getPackForStaticPath();
+}
+
+const { collection, images } = Astro.props;
+---
+
+<Layout title={collection.title}>
+  <div
+    class="mb-8 flex flex-col gap-8 border-b border-b-gray-300 pb-8 md:flex-row"
+    id="pack"
+  >
+    <Image
+      layout="constrained"
+      src={collection.cover}
+      alt={`Cover for ${collection.title}`}
+      width={780}
+      class="mx-auto w-full md:w-6/12"
+      quality={85}
+    />
+    <div class="flex w-full grow flex-col gap-4 md:w-6/12">
+      <Link class="mb-4 flex items-center gap-2" href={collection.downloadLink}
+        ><Save /> Download link</Link
+      >
+      <div class="flex flex-col gap-2">
+        <div class="flex items-center gap-2">
+          <Calendar />
+          <Bold>Published on this site</Bold>
+        </div>
+        {collection.publishedAt}
+      </div>
+      <div class="flex flex-col gap-2">
+        <div class="flex items-center gap-2">
+          <OrigamiIcon />
+          <Bold>Source</Bold>
+        </div>
+        {collection.source}
+      </div>
+      <div class="flex flex-col gap-2">
+        <div class="flex items-center gap-2">
+          <Tag />
+          <Bold>Type</Bold>
+        </div>
+        <Link href={`/${collection.type}`} class="capitalize"
+          >{collection.type}</Link
+        >
+      </div>
+    </div>
+  </div>
+  <Grid images={images} />
+</Layout>

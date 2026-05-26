@@ -1,0 +1,24 @@
+---
+import { Image } from "astro:assets";
+import image404 from "../assets/404.jpg";
+import Grid from "../components/grid.astro";
+import SearchBar from "../components/inputs/search-bar.vue";
+import { getNRandomImages } from "../entities/images";
+import Layout from "../layouts/Layout.astro";
+
+const images = await getNRandomImages(8);
+---
+
+<Layout title="Nothing here">
+  <SearchBar client:load />
+  <div class="flex flex-col items-center gap-8">
+    <div class="mt-8 flex flex-col items-center justify-center gap-4">
+      <p>This page doesn't exist...yet!</p>
+      <Image src={image404} alt="Page 404" height={500} layout="constrained" />
+    </div>
+    <div class="flex w-full grow flex-col gap-8">
+      <h2 class="text-2xl">But...here are some random images</h2>
+      <Grid images={images} />
+    </div>
+  </div>
+</Layout>

@@ -1,0 +1,95 @@
+{
+  "cover": "./cover.jpg",
+  "downloadLink": "https://ko-fi.com/s/4736ee6990",
+  "publishedAt": "2026-05-26",
+  "slug": "texture-pack-3-bright-papers-end-papers",
+  "source": "Old Books first pages, paper.",
+  "title": "Texture Pack 3 - Bright Papers, End-papers",
+  "type": "textures",
+  "images": [
+    {
+      "link": "./files/beige-woven.jpg",
+      "slug": "beige-woven",
+      "name": "Beige Woven",
+      "tags": ["beige", "woven"],
+      "description": ""
+    },
+    {
+      "link": "./files/blank-page-2.jpg",
+      "slug": "blank-page-2",
+      "name": "Blank Page 2",
+      "tags": ["blank", "page"],
+      "description": ""
+    },
+    {
+      "link": "./files/blank-page.jpg",
+      "slug": "blank-page",
+      "name": "Blank Page",
+      "tags": ["blank", "page"],
+      "description": ""
+    },
+    {
+      "link": "./files/blue-swirls-end-paper.jpg",
+      "slug": "blue-swirls-end-paper",
+      "name": "Blue Swirls End Paper",
+      "tags": ["blue", "swirls", "end-paper"],
+      "description": ""
+    },
+    {
+      "link": "./files/coloured-by-time-2.jpg",
+      "slug": "coloured-by-time-2",
+      "name": "Coloured by Time 2",
+      "tags": ["coloured", "by", "time"],
+      "description": ""
+    },
+    {
+      "link": "./files/coloured-by-time.jpg",
+      "slug": "coloured-by-time",
+      "name": "Coloured by Time",
+      "tags": ["coloured", "by", "time"],
+      "description": ""
+    },
+    {
+      "link": "./files/decorative-end-paper.jpg",
+      "slug": "decorative-end-paper",
+      "name": "Decorative End Paper",
+      "tags": ["decorative", "end-paper"],
+      "description": ""
+    },
+    {
+      "link": "./files/folded-old-parchment.jpg",
+      "slug": "folded-old-parchment",
+      "name": "Folded Old Parchment",
+      "tags": ["folded", "old", "parchment"],
+      "description": ""
+    },
+    {
+      "link": "./files/marbled-paper.jpg",
+      "slug": "marbled-paper",
+      "name": "Marbled Paper",
+      "tags": ["marbled", "paper"],
+      "description": ""
+    },
+    {
+      "link": "./files/richly-decorated-golden-end-paper.jpg",
+      "slug": "richly-decorated-golden-end-paper",
+      "name": "Richly Decorated Golden End Paper",
+      "tags": ["richly", "decorated", "golden", "end-paper"],
+      "description": ""
+    },
+    {
+      "link": "./files/straw-paper.jpg",
+      "slug": "straw-paper",
+      "name": "Straw Paper",
+      "tags": ["straw", "paper"],
+      "description": ""
+    },
+    {
+      "link": "./files/white-linen-paper.jpg",
+      "slug": "white-linen-paper",
+      "name": "White Linen Paper",
+      "tags": ["white", "linen", "paper"],
+      "description": ""
+    }
+  ]
+}

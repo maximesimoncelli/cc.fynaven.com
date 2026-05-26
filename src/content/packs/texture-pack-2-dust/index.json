@@ -1,0 +1,114 @@
+{
+  "title": "Texture Pack 2 - Dust",
+  "slug": "texture-pack-2-dust",
+  "type": "textures",
+  "source": "Various papers and dust on old negatives.",
+  "cover": "./cover.jpg",
+  "downloadLink": "https://ko-fi.com/s/1844c42e7e",
+  "publishedAt": "2025-09-14",
+  "images": [
+    {
+      "link": "./files/dust-texture-01.jpg",
+      "slug": "dust-texture-01",
+      "name": "Dust Texture 01",
+      "tags": ["texture", "paper", "washes", "marks", "scratches", "black"],
+      "description": "A sheet of black paper with marks of wear."
+    },
+    {
+      "link": "./files/dust-texture-02.jpg",
+      "slug": "dust-texture-02",
+      "name": "Dust Texture 02",
+      "tags": [
+        "texture",
+        "scratches",
+        "black",
+        "dark",
+        "dust",
+        "warm",
+        "deep-red"
+      ],
+      "description": "A vintage dust and scratch overlay with prominent white streaks and hair lines on a dark background."
+    },
+    {
+      "link": "./files/dust-texture-03.jpg",
+      "slug": "dust-texture-03",
+      "name": "Dust Texture 03",
+      "tags": [
+        "texture",
+        "scratches",
+        "black",
+        "dark",
+        "dust",
+        "film",
+        "camera"
+      ],
+      "description": "A scan of a roll of film, with heavy dust and a vertical band on the right."
+    },
+    {
+      "link": "./files/dust-texture-04.jpg",
+      "slug": "dust-texture-04",
+      "name": "Dust Texture 04",
+      "tags": ["texture", "scratches", "black", "dark", "dust"],
+      "description": "A light dust texture."
+    },
+    {
+      "link": "./files/dust-texture-05.jpg",
+      "slug": "dust-texture-05",
+      "name": "Dust Texture 05",
+      "tags": [
+        "texture",
+        "scratches",
+        "black",
+        "dark",
+        "dust",
+        "marks",
+        "scratches"
+      ],
+      "description": "A light dust texture."
+    },
+    {
+      "link": "./files/dust-texture-06.jpg",
+      "slug": "dust-texture-06",
+      "name": "Dust Texture 06",
+      "tags": ["texture", "dust", "night-sky"],
+      "description": "A heavy dust texture, with a distinct night sky feel."
+    },
+    {
+      "link": "./files/dust-texture-07.jpg",
+      "slug": "dust-texture-07",
+      "name": "Dust Texture 07",
+      "tags": [
+        "texture",
+        "paper",
+        "black",
+        "dust",
+        "washes",
+        "marks",
+        "blackboard",
+        "scratches"
+      ],
+      "description": "Dust and scratches on a sheet of black paper, with a distinctive blackboard feel."
+    },
+    {
+      "link": "./files/dust-texture-08.jpg",
+      "slug": "dust-texture-08",
+      "name": "Dust Texture 08",
+      "tags": ["texture", "paper", "colour", "crinkles"],
+      "description": "A sheet of black paper, crinkled and lighted in a way that it show hints of cyan and blue."
+    },
+    {
+      "link": "./files/dust-texture-09.jpg",
+      "slug": "dust-texture-09",
+      "name": "Dust Texture 09",
+      "tags": ["texture", "dust", "colour", "dark", "crinkles"],
+      "description": "A sheet of black paper, crinkled and lighted in a way that it show hints of magenta."
+    },
+    {
+      "link": "./files/dust-texture-10.jpg",
+      "slug": "dust-texture-10",
+      "name": "Dust Texture 10",
+      "tags": ["texture", "black", "paper", "dust"],
+      "description": "A lightly dusty sheet of black paper, quite luminous."
+    }
+  ]
+}

@@ -1,0 +1,95 @@
+{
+  "title": "Texture Pack 1 - Papers",
+  "slug": "texture-pack-1-papers",
+  "type": "textures",
+  "source": "Scanned papers.",
+  "cover": "./cover.jpg",
+  "downloadLink": "https://ko-fi.com/s/78a836d8e3",
+  "publishedAt": "2025-08-15",
+  "images": [
+    {
+      "link": "./files/creases.jpg",
+      "slug": "creases",
+      "name": "Creases",
+      "tags": [
+        "texture",
+        "paper",
+        "dark",
+        "black",
+        "creases",
+        "scratches",
+        "folds"
+      ],
+      "description": "A high-resolution texture of folded paper showing prominent crease lines and wear."
+    },
+    {
+      "link": "./files/crinkled-dark-paper-1.jpg",
+      "slug": "crinkled-dark-paper-1",
+      "name": "Crinkled Dark Paper 1",
+      "tags": [
+        "texture",
+        "paper",
+        "dark",
+        "black",
+        "creases",
+        "scratches",
+        "crinkles",
+        "volume"
+      ],
+      "description": "A textured black paper sheet with light crinkling and dynamic highlights."
+    },
+    {
+      "link": "./files/crinkled-dark-paper-2.jpg",
+      "slug": "crinkled-dark-paper-2",
+      "name": "Crinkled Dark Paper 2",
+      "tags": [
+        "texture",
+        "paper",
+        "dark",
+        "black",
+        "creases",
+        "scratches",
+        "crinkles",
+        "volume"
+      ],
+      "description": "A textured black paper sheet with heavy crinkling and dynamic highlights."
+    },
+    {
+      "link": "./files/jcard-creases-back.jpg",
+      "slug": "jcard-creases-back",
+      "name": "JCard Creases Back",
+      "tags": [
+        "texture",
+        "paper",
+        "grey",
+        "black-and-white",
+        "creases",
+        "jcard",
+        "cassette"
+      ],
+      "description": "A scanned sheet of paper creased with Jcard lines"
+    },
+    {
+      "link": "./files/jcard-creases-front.jpg",
+      "slug": "jcard-creases-front",
+      "name": "JCard Creases Front",
+      "tags": [
+        "texture",
+        "paper",
+        "grey",
+        "black-and-white",
+        "creases",
+        "jcard",
+        "cassette"
+      ],
+      "description": "A scanned sheet of paper creased with Jcard lines"
+    },
+    {
+      "link": "./files/plain-black-with-wash-marks.jpg",
+      "slug": "plain-black-with-wash-marks",
+      "name": "Plain Black With Wash Marks",
+      "tags": ["texture", "paper", "grey", "black-and-white", "washes"],
+      "description": "A plain black sheet of paper with a few wash marks."
+    }
+  ]
+}

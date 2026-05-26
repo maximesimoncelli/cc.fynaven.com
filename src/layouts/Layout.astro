@@ -1,0 +1,46 @@
+---
+import { ClientRouter, fade } from "astro:transitions";
+import Footer from "../components/footer.astro";
+import Head from "../components/head.astro";
+import Header from "../components/header.astro";
+import "../styles/global.css";
+
+interface Props {
+  title?: string;
+  socialSharingOverride?: ImageMetadata;
+}
+
+const { title, socialSharingOverride } = Astro.props;
+---
+
+<!doctype html>
+<html
+  lang="en"
+  transition:name="root"
+  transition:animate={fade({ duration: "0.1s" })}
+>
+  <Head title={title} socialSharingOverride={socialSharingOverride} />
+  <body
+    class="flex min-h-screen scrollbar-gutter-auto flex-col bg-olive-100 font-serif text-base text-zinc-700 antialiased dark:bg-mist-950 dark:text-zinc-300"
+  >
+    <ClientRouter />
+
+    <Header />
+    <main id="content" class="mx-auto mt-2 w-full max-w-7xl grow p-2">
+      {
+        title && (
+          <header class="mb-8">
+            <h1
+              class="text-2xl font-extrabold tracking-tight text-olive-700 md:text-3xl dark:text-olive-400"
+              id="page-main-title"
+            >
+              {title}
+            </h1>
+          </header>
+        )
+      }
+      <slot />
+    </main>
+    <Footer />
+  </body>
+</html>
