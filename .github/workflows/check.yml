@@ -2,6 +2,8 @@ name: Full Check
 
 env:
   NX_CLOUD_ACCESS_TOKEN: ${{ secrets.NX_CLOUD_ACCESS_TOKEN }}
+  PUBLIC_URL: http://localhost:4321
+  PUBLIC_MEDIA_DOMAIN: http://localhost:4321
 
 on:
   push:
