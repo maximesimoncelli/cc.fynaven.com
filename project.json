@@ -4,10 +4,18 @@
   "projectType": "application",
   "sourceRoot": "src",
   "targets": {
+    "prepare:images": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "node scripts/prepare-images.ts"
+      },
+      "cache": true,
+      "outputs": ["{projectRoot}/src/content/packs/**/index.json"]
+    },
     "prepare:build": {
       "executor": "nx:run-commands",
       "options": {
-        "command": "node scripts/build.ts -e"
+        "command": "node scripts/build.ts"
       },
       "inputs": [
         "{projectRoot}/.env.production",
@@ -19,7 +27,6 @@
       "cache": true,
       "outputs": [
         "{projectRoot}/src/content/packs/**/index.build.json",
-        "{projectRoot}/src/content/packs/**/index.json",
         "{projectRoot}/wrangler.jsonc"
       ]
     },
