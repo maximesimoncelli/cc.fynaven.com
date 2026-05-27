@@ -1,6 +1,11 @@
 {
   "cover": "./cover.jpg",
   "downloadLink": "https://ko-fi.com/s/4736ee6990",
+  "publishedAt": "2026-05-22",
+  "slug": "illustration-pack-1-astronomy",
+  "source": "Astronomie Populaire, by Camille Flammarion, 1880.",
+  "title": "Illustration Pack 1 - Astronomy",
+  "type": "illustrations",
   "images": [
     {
       "description": "An illustration of a hot-air balloon soaring high above a sea of clouds under a clear sky.",
@@ -15,7 +20,12 @@
         "sky",
         "black-and-white",
         "sunny"
-      ]
+      ],
+      "width": 810,
+      "height": 772,
+      "originalWidth": 8305,
+      "originalHeight": 7918,
+      "format": "jpeg"
     },
     {
       "description": "An illustration depicting the planet Earth as seen from the surface of Venus bright Earth in a dark sky above a rocky Venusian landscape.",
@@ -32,7 +42,12 @@
         "etching",
         "black-and-white",
         "engraving"
-      ]
+      ],
+      "width": 810,
+      "height": 2975,
+      "originalWidth": 3025,
+      "originalHeight": 11110,
+      "format": "png"
     },
     {
       "artists": [
@@ -59,7 +74,12 @@
         "scholar",
         "book",
         "drapery"
-      ]
+      ],
+      "width": 810,
+      "height": 1188,
+      "originalWidth": 8304,
+      "originalHeight": 12183,
+      "format": "jpeg"
     },
     {
       "artists": [
@@ -86,7 +106,12 @@
         "etching",
         "astronomy",
         "sky"
-      ]
+      ],
+      "width": 810,
+      "height": 1151,
+      "originalWidth": 8668,
+      "originalHeight": 12319,
+      "format": "jpeg"
     },
     {
       "artists": [
@@ -107,7 +132,12 @@
         "clouds",
         "astronomy",
         "milky-way"
-      ]
+      ],
+      "width": 810,
+      "height": 924,
+      "originalWidth": 7909,
+      "originalHeight": 9023,
+      "format": "jpeg"
     },
     {
       "artists": [
@@ -129,14 +159,24 @@
         "desert",
         "mountains",
         "astronomy"
-      ]
+      ],
+      "width": 810,
+      "height": 1169,
+      "originalWidth": 6237,
+      "originalHeight": 9000,
+      "format": "jpeg"
     },
     {
       "description": "A diagram representing the division of the hours of the day and night superimposed over the earth.",
       "link": "./files/astronomy-id-2-the-hours-of-day-and-night.png",
       "name": "The Hours of Day and Night",
       "slug": "astronomy-id-2-the-hours-of-day-and-night",
-      "tags": ["illustration"]
+      "tags": ["illustration"],
+      "width": 810,
+      "height": 1408,
+      "originalWidth": 5014,
+      "originalHeight": 8718,
+      "format": "png"
     },
     {
       "artists": [
@@ -150,14 +190,24 @@
       "link": "./files/astronomy-id-14-the-light-of-the-moon-prefers-the-company-of-ruins-and-solitudes-carl-gustav-carus.jpg",
       "name": "The Light of the Moon Prefers the Company of Ruins and Solitudes",
       "slug": "astronomy-id-14-the-light-of-the-moon-prefers-the-company-of-ruins-and-solitudes-carl-gustav-carus",
-      "tags": ["illustration"]
+      "tags": ["illustration"],
+      "width": 810,
+      "height": 1076,
+      "originalWidth": 7837,
+      "originalHeight": 10414,
+      "format": "jpeg"
     },
     {
       "description": "The moon seen from the earth, partially hidden by clouds at dusk. The scene seems to depict a lake scene with a mountainous backdrop. Boats seem to be represented on the lake.",
       "link": "./files/astronomy-id-6-the-moon.jpg",
       "name": "The Moon",
       "slug": "astronomy-id-6-the-moon",
-      "tags": ["illustration"]
+      "tags": ["illustration"],
+      "width": 810,
+      "height": 906,
+      "originalWidth": 9000,
+      "originalHeight": 10068,
+      "format": "jpeg"
     },
     {
       "artists": [
@@ -171,7 +221,12 @@
       "link": "./files/astronomy-id-3-the-earth-kemplen-jc.png",
       "name": "The Earth",
       "slug": "astronomy-id-3-the-earth-kemplen-jc",
-      "tags": ["illustration"]
+      "tags": ["illustration"],
+      "width": 810,
+      "height": 1203,
+      "originalWidth": 7409,
+      "originalHeight": 11000,
+      "format": "png"
     },
     {
       "artists": [
@@ -185,21 +240,36 @@
       "link": "./files/astronomy-id-10-the-southern-cross.jpg",
       "name": "The Southern Cross",
       "slug": "astronomy-id-10-the-southern-cross",
-      "tags": ["illustration"]
+      "tags": ["illustration"],
+      "width": 810,
+      "height": 1162,
+      "originalWidth": 6273,
+      "originalHeight": 9000,
+      "format": "jpeg"
     },
     {
       "description": "An illustration depicting the effects of the tide on the sea. Or rather, that's what I suppose it shows, as a beach can be seen with several silhouettes. This natural cove is surrounded by very sharp cliffs and peaks.",
       "link": "./files/astronomy-id-4-the-tides.png",
       "name": "The Tides",
       "slug": "astronomy-id-4-the-tides",
-      "tags": ["illustration"]
+      "tags": ["illustration"],
+      "width": 810,
+      "height": 866,
+      "originalWidth": 8284,
+      "originalHeight": 8858,
+      "format": "png"
     },
     {
       "description": "A small representation of two celestial bodies, with a smaller one orbiting a larger one.",
       "link": "./files/astronomy-id-5-theory-of-the-formation-of-the-earth.jpg",
       "name": "Theory of the Formation of the Earth",
       "slug": "astronomy-id-5-theory-of-the-formation-of-the-earth",
-      "tags": ["illustration"]
+      "tags": ["illustration"],
+      "width": 810,
+      "height": 434,
+      "originalWidth": 11112,
+      "originalHeight": 5954,
+      "format": "jpeg"
     },
     {
       "artists": [
@@ -213,12 +283,12 @@
       "link": "./files/astronomy-id-12-total-eclipse-of-the-sun-regnier-barbant.jpg",
       "name": "Total Eclipse of the Sun",
       "slug": "astronomy-id-12-total-eclipse-of-the-sun-regnier-barbant",
-      "tags": ["illustration"]
+      "tags": ["illustration"],
+      "width": 810,
+      "height": 1175,
+      "originalWidth": 8442,
+      "originalHeight": 12243,
+      "format": "jpeg"
     }
-  ],
-  "publishedAt": "2026-05-22",
-  "slug": "illustration-pack-1-astronomy",
-  "source": "Astronomie Populaire, by Camille Flammarion, 1880.",
-  "title": "Illustration Pack 1 - Astronomy",
-  "type": "illustrations"
+  ]
 }

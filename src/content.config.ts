@@ -6,7 +6,10 @@ import { dataLayerPackSchema } from "./entities/images";
 import { type DataLayerTag, dataLayerTagSchema } from "./entities/tags";
 
 const packs = defineCollection({
-  loader: glob({ base: "./src/content/packs", pattern: "**/index.json" }),
+  loader: glob({
+    base: "./src/content/packs",
+    pattern: import.meta.env.PROD ? "**/index.build.json" : "**/index.json",
+  }),
   schema: ({ image }) => dataLayerPackSchema(image),
 });
 
@@ -20,7 +23,11 @@ function tagsLoader(): Loader {
       const packFiles = fs
         .readdirSync(packsDir, { recursive: true })
         .filter(
-          (file) => typeof file === "string" && file.endsWith("index.json"),
+          (file) =>
+            typeof file === "string" &&
+            file.endsWith(
+              import.meta.env.PROD ? "index.build.json" : "index.json",
+            ),
         );
 
       const images = packFiles.flatMap((file) => {

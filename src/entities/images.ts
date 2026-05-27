@@ -8,16 +8,43 @@ import type { ImageMetadata } from "astro";
 import { z } from "astro/zod";
 import type { DataLayerArtist } from "./artists";
 
+export interface JSONLayerPack {
+  title: string;
+  slug: string;
+  type: string;
+  source: string;
+  sourceDetails?: string;
+  cover: string;
+  images: Array<{
+    link: string;
+    slug: string;
+    name: string;
+    width: number;
+    height: number;
+    originalWidth: number;
+    originalHeight: number;
+    format: string;
+    artists: string[];
+    description: string;
+  }>;
+}
+
 export interface DataLayerPack {
   title: string;
   slug: string;
   type: string;
   source: string;
+  sourceDetails?: string;
   cover: ImageMetadata;
   images: Array<{
     link: ImageMetadata;
     slug: string;
     name: string;
+    width: number;
+    height: number;
+    originalWidth: number;
+    originalHeight: number;
+    format: string;
     artists: DataLayerArtist[];
     description: string;
   }>;
@@ -36,6 +63,7 @@ export function dataLayerPackSchema(image: ImageFunction) {
     slug: z.string(),
     type: z.enum(Object.values(DataLayerPackType)),
     source: z.string(),
+    sourceDetails: z.string().optional(),
     cover: image(),
     downloadLink: z.string(),
     publishedAt: z.iso.date(),
@@ -44,6 +72,11 @@ export function dataLayerPackSchema(image: ImageFunction) {
         link: image(),
         slug: z.string(),
         name: z.string(),
+        width: z.number(),
+        height: z.number(),
+        originalWidth: z.number(),
+        originalHeight: z.number(),
+        format: z.string(),
         source: z.string().optional(),
         tags: z.array(reference("tags")),
         artists: z

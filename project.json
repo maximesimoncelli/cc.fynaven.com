@@ -4,13 +4,37 @@
   "projectType": "application",
   "sourceRoot": "src",
   "targets": {
-    "astro:build": {
-      "dependsOn": [
-        "wrangler:types",
-        "astro:check",
-        "eslint:lint",
-        "prettier:format"
+    "prepare:images": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "node scripts/prepare-images.ts"
+      },
+      "cache": true,
+      "outputs": ["{projectRoot}/src/content/packs/**/index.json"]
+    },
+    "prepare:build": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "node scripts/build.ts"
+      },
+      "inputs": [
+        "{projectRoot}/.env.production",
+        "{projectRoot}/.env.development",
+        "{projectRoot}/scripts/build.ts",
+        "{projectRoot}/src/content/packs/**/index.json",
+        "{projectRoot}/wrangler.example.jsonc"
       ],
+      "cache": true,
+      "outputs": [
+        "{projectRoot}/src/content/packs/**/index.build.json",
+        "{projectRoot}/wrangler.jsonc"
+      ]
+    },
+    "astro:build": {
+      "configurations": {
+        "production": {}
+      },
+      "dependsOn": ["prepare:build", "wrangler:types"],
       "executor": "nx:run-commands",
       "options": {
         "command": "astro build"

@@ -12,7 +12,12 @@
       "slug": "dust-texture-01",
       "name": "Dust Texture 01",
       "tags": ["texture", "paper", "washes", "marks", "scratches", "black"],
-      "description": "A sheet of black paper with marks of wear."
+      "description": "A sheet of black paper with marks of wear.",
+      "width": 810,
+      "height": 1151,
+      "originalWidth": 5389,
+      "originalHeight": 7660,
+      "format": "jpeg"
     },
     {
       "link": "./files/dust-texture-02.jpg",
@@ -27,7 +32,12 @@
         "warm",
         "deep-red"
       ],
-      "description": "A vintage dust and scratch overlay with prominent white streaks and hair lines on a dark background."
+      "description": "A vintage dust and scratch overlay with prominent white streaks and hair lines on a dark background.",
+      "width": 810,
+      "height": 958,
+      "originalWidth": 6336,
+      "originalHeight": 7496,
+      "format": "jpeg"
     },
     {
       "link": "./files/dust-texture-03.jpg",
@@ -42,14 +52,24 @@
         "film",
         "camera"
       ],
-      "description": "A scan of a roll of film, with heavy dust and a vertical band on the right."
+      "description": "A scan of a roll of film, with heavy dust and a vertical band on the right.",
+      "width": 810,
+      "height": 803,
+      "originalWidth": 7833,
+      "originalHeight": 7766,
+      "format": "jpeg"
     },
     {
       "link": "./files/dust-texture-04.jpg",
       "slug": "dust-texture-04",
       "name": "Dust Texture 04",
       "tags": ["texture", "scratches", "black", "dark", "dust"],
-      "description": "A light dust texture."
+      "description": "A light dust texture.",
+      "width": 810,
+      "height": 1150,
+      "originalWidth": 5492,
+      "originalHeight": 7794,
+      "format": "jpeg"
     },
     {
       "link": "./files/dust-texture-05.jpg",
@@ -64,14 +84,24 @@
         "marks",
         "scratches"
       ],
-      "description": "A light dust texture."
+      "description": "A light dust texture.",
+      "width": 810,
+      "height": 988,
+      "originalWidth": 7500,
+      "originalHeight": 9145,
+      "format": "jpeg"
     },
     {
       "link": "./files/dust-texture-06.jpg",
       "slug": "dust-texture-06",
       "name": "Dust Texture 06",
       "tags": ["texture", "dust", "night-sky"],
-      "description": "A heavy dust texture, with a distinct night sky feel."
+      "description": "A heavy dust texture, with a distinct night sky feel.",
+      "width": 810,
+      "height": 1264,
+      "originalWidth": 4804,
+      "originalHeight": 7499,
+      "format": "jpeg"
     },
     {
       "link": "./files/dust-texture-07.jpg",
@@ -87,28 +117,48 @@
         "blackboard",
         "scratches"
       ],
-      "description": "Dust and scratches on a sheet of black paper, with a distinctive blackboard feel."
+      "description": "Dust and scratches on a sheet of black paper, with a distinctive blackboard feel.",
+      "width": 810,
+      "height": 1043,
+      "originalWidth": 6382,
+      "originalHeight": 8218,
+      "format": "jpeg"
     },
     {
       "link": "./files/dust-texture-08.jpg",
       "slug": "dust-texture-08",
       "name": "Dust Texture 08",
       "tags": ["texture", "paper", "colour", "crinkles"],
-      "description": "A sheet of black paper, crinkled and lighted in a way that it show hints of cyan and blue."
+      "description": "A sheet of black paper, crinkled and lighted in a way that it show hints of cyan and blue.",
+      "width": 810,
+      "height": 1272,
+      "originalWidth": 7246,
+      "originalHeight": 11381,
+      "format": "jpeg"
     },
     {
       "link": "./files/dust-texture-09.jpg",
       "slug": "dust-texture-09",
       "name": "Dust Texture 09",
       "tags": ["texture", "dust", "colour", "dark", "crinkles"],
-      "description": "A sheet of black paper, crinkled and lighted in a way that it show hints of magenta."
+      "description": "A sheet of black paper, crinkled and lighted in a way that it show hints of magenta.",
+      "width": 810,
+      "height": 1120,
+      "originalWidth": 7513,
+      "originalHeight": 10392,
+      "format": "jpeg"
     },
     {
       "link": "./files/dust-texture-10.jpg",
       "slug": "dust-texture-10",
       "name": "Dust Texture 10",
       "tags": ["texture", "black", "paper", "dust"],
-      "description": "A lightly dusty sheet of black paper, quite luminous."
+      "description": "A lightly dusty sheet of black paper, quite luminous.",
+      "width": 810,
+      "height": 1410,
+      "originalWidth": 6892,
+      "originalHeight": 12000,
+      "format": "jpeg"
     }
   ]
 }

@@ -24,7 +24,12 @@
         "asymmetrical"
       ],
       "source": "Lord Byron's 'Poetical Works'. Published ? by Leighton, Son & Hodge.",
-      "description": "A circular golden frame with heavy classical ornamentations and a shiny metallic finish."
+      "description": "A circular golden frame with heavy classical ornamentations and a shiny metallic finish.",
+      "width": 810,
+      "height": 1271,
+      "originalWidth": 5540,
+      "originalHeight": 8693,
+      "format": "png"
     },
     {
       "link": "./files/golden-frame-2.png",
@@ -39,7 +44,12 @@
         "rectangular",
         "symmetrical"
       ],
-      "description": "A fairly simple golden double border."
+      "description": "A fairly simple golden double border.",
+      "width": 810,
+      "height": 1223,
+      "originalWidth": 6469,
+      "originalHeight": 9765,
+      "format": "png"
     },
     {
       "link": "./files/golden-frame-3.png",
@@ -60,7 +70,12 @@
         "symmetrical"
       ],
       "source": "",
-      "description": "An ornate frame with a vine or otherwise serpentine fauna or flora wrapped around a central pillar around the frame."
+      "description": "An ornate frame with a vine or otherwise serpentine fauna or flora wrapped around a central pillar around the frame.",
+      "width": 810,
+      "height": 1591,
+      "originalWidth": 4337,
+      "originalHeight": 8517,
+      "format": "png"
     },
     {
       "link": "./files/golden-frame-4.png",
@@ -78,7 +93,12 @@
         "large",
         "symmetrical"
       ],
-      "description": "A golden frame made of a large border ornated with flourishes."
+      "description": "A golden frame made of a large border ornated with flourishes.",
+      "width": 810,
+      "height": 1256,
+      "originalWidth": 6245,
+      "originalHeight": 9685,
+      "format": "png"
     },
     {
       "link": "./files/golden-frame-5.png",
@@ -97,7 +117,12 @@
         "decorative",
         "symmetrical"
       ],
-      "description": "A rounded cross frame with orante and symmetrical circular patterns."
+      "description": "A rounded cross frame with orante and symmetrical circular patterns.",
+      "width": 810,
+      "height": 1543,
+      "originalWidth": 4000,
+      "originalHeight": 7621,
+      "format": "png"
     },
     {
       "link": "./files/golden-frame-6.png",
@@ -119,7 +144,12 @@
         "face",
         "fruit"
       ],
-      "description": "A richly decorated and illustrated frame with very thick borders."
+      "description": "A richly decorated and illustrated frame with very thick borders.",
+      "width": 810,
+      "height": 1229,
+      "originalWidth": 8540,
+      "originalHeight": 12956,
+      "format": "png"
     },
     {
       "link": "./files/golden-frame-7.png",
@@ -137,7 +167,12 @@
         "large",
         "symmetrical"
       ],
-      "description": "A frame showing a weathered gold patina and elegant border designs, consisting of triangular flourishes all around the frame"
+      "description": "A frame showing a weathered gold patina and elegant border designs, consisting of triangular flourishes all around the frame",
+      "width": 810,
+      "height": 1056,
+      "originalWidth": 9864,
+      "originalHeight": 12855,
+      "format": "png"
     }
   ]
 }

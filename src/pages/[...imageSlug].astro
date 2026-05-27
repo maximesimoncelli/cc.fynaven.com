@@ -17,7 +17,7 @@ import {
 import Contraster from "../components/contraster.astro";
 import Link from "../components/link.astro";
 import Bold from "../components/text/bold.astro";
-import dustTexture from "../content/packs/texture-pack-2-dust/files/dust-texture-10.jpg";
+import dustTexture from "../assets/image-background.jpg";
 import { getImageForStaticPath } from "../entities/images";
 import Layout from "../layouts/Layout.astro";
 
@@ -28,7 +28,7 @@ export async function getStaticPaths() {
 const { img, collection, tags } = Astro.props;
 
 const downloadLink = new URL(
-  `${collection.slug}/${img.slug}.${img.link.format}`,
+  `${collection.slug}/${img.slug}.${img.format}`,
   PUBLIC_MEDIA_URL,
 );
 
@@ -46,8 +46,9 @@ const title = `${img.name} - ${collection.source}`;
         style={img.link.format === "png"
           ? `background: url(${dustProcessed.src}); background-size: auto;`
           : ""}
+        width={img.width}
+        height={img.height}
         layout="constrained"
-        width={780}
         class="image mx-auto h-auto rounded-xs object-contain md:max-h-dvh"
       />
       <Link
@@ -82,7 +83,8 @@ const title = `${img.name} - ${collection.source}`;
           <OrigamiIcon />
           <Bold>Source</Bold>
         </div>
-        {img.source ?? collection.source}
+        <p>{img.source ?? collection.source}</p>
+        <p>{collection?.sourceDetails}</p>
       </div>
 
       {
@@ -118,10 +120,10 @@ const title = `${img.name} - ${collection.source}`;
         </div>
         <div class="flex flex-col gap-1">
           <span>
-            Width: {img.link.width}px
+            Width: {img.originalWidth}px
           </span>
           <span>
-            Height: {img.link.height}px
+            Height: {img.originalHeight}px
           </span>
         </div>
       </div>
@@ -130,7 +132,7 @@ const title = `${img.name} - ${collection.source}`;
           <Asterisk />
           <Bold>Image extension</Bold>
         </div>
-        <div>.{img.link.format}</div>
+        <div>.{img.format}</div>
       </div>
       <div class="flex flex-col gap-2">
         <div class="flex items-center gap-2">
