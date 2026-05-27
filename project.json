@@ -11,12 +11,12 @@
       },
       "inputs": [
         "{projectRoot}/src/content/packs/**/index.json",
-        "{projectRoot}/.wrangler.example.jsonc"
+        "{projectRoot}/wrangler.example.jsonc"
       ],
       "cache": true,
       "outputs": [
         "{projectRoot}/src/content/packs/**/index.build.json",
-        "{projectRoot}/.wrangler.jsonc"
+        "{projectRoot}/wrangler.jsonc"
       ]
     },
     "astro:build": {
