@@ -12,6 +12,10 @@ const {
 
 const ROOT_PATH = process.cwd();
 
+/**
+ * Processes the `index.json` pack files in order to get the proper bucket
+ * paths at build time.
+ */
 export function processPacksForBuild() {
   const packsDir = join(ROOT_PATH, "./src/content/packs");
 
@@ -39,6 +43,10 @@ export function processPacksForBuild() {
   }
 }
 
+/**
+ * Processes the `wrangler.example.jsonc` file in order to build the correct
+ * one at build time.
+ */
 export function processWranglerJSON() {
   const configurationFiles = {
     wrangler: {

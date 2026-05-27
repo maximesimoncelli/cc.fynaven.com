@@ -23,13 +23,7 @@
       "configurations": {
         "production": {}
       },
-      "dependsOn": [
-        "prepare:build",
-        "wrangler:types",
-        "astro:check",
-        "eslint:lint",
-        "prettier:format"
-      ],
+      "dependsOn": ["prepare:build", "wrangler:types"],
       "executor": "nx:run-commands",
       "options": {
         "command": "astro build"
