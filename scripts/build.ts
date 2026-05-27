@@ -1,6 +1,6 @@
 import { readdirSync, readFileSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
-import type { JSONLayerPack } from "./src/entities/images";
+import type { JSONLayerPack } from "../src/entities/images";
 import { loadEnv } from "vite";
 
 const {
@@ -22,6 +22,7 @@ export function processPacksForBuild() {
   for (let packFile of packFiles) {
     const filePath = join(packsDir, packFile.toString());
     const pack = JSON.parse(readFileSync(filePath, "utf-8")) as JSONLayerPack;
+    pack.cover = pack.cover.replace("./", `${PUBLIC_MEDIA_URL}/${pack.slug}/`);
     pack.images = pack.images.map((image) => {
       return {
         ...image,

@@ -19,7 +19,7 @@
     "full:check": "pnpm nx run -t full:check",
     "ci:check": "pnpm nx run -t ci:check",
     "prepare": "husky",
-    "postinstall": "node install.mjs"
+    "postinstall": "node scripts/install.ts"
   },
   "dependencies": {
     "@astrojs/check": "^0.9.9",

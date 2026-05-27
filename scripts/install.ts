@@ -10,7 +10,7 @@ const configurationFiles = {
   },
 };
 
-function useCreateEnv() {
+function useCreateEnv(): Record<string, string> {
   const PUBLIC_URL = "http://localhost:4321";
   const PUBLIC_MEDIA_URL = ""; // TODO: Add a proper R2 emulation route.
 
@@ -28,6 +28,7 @@ writeFileSync(configurationFiles.env.destination, envExample);
 console.log(
   `\nCreated file ${configurationFiles.env.destination} with values:\n`,
 );
+
 for (let key in useCreateEnv()) {
   console.log(`${key}=${useCreateEnv()[key]}`);
 }

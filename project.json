@@ -7,7 +7,7 @@
     "prepare:build": {
       "executor": "nx:run-commands",
       "options": {
-        "command": "node build.ts"
+        "command": "node scripts/build.ts"
       },
       "inputs": [
         "{projectRoot}/src/content/packs/**/index.json",
