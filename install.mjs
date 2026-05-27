@@ -4,10 +4,6 @@ import { join } from "node:path";
 const ROOT_PATH = process.cwd();
 
 const configurationFiles = {
-  wrangler: {
-    source: join(ROOT_PATH, "wrangler.example.jsonc"),
-    destination: join(ROOT_PATH, "wrangler.jsonc"),
-  },
   env: {
     source: join(ROOT_PATH, ".env.example"),
     destination: join(ROOT_PATH, ".env.development"),

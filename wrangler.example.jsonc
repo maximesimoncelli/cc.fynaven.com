@@ -1,17 +1,17 @@
 {
   "$schema": "./node_modules/wrangler/config-schema.json",
-  "compatibility_date": "<compatibility_date>", // Change me
-  "compatibility_flags": ["compatibility_flags"], // Change me
-  "name": "<name-of-our-worker>", // Change me
+  "compatibility_date": "<compatibility_date>",
+  "compatibility_flags": ["compatibility_flags"],
+  "name": "<name-of-our-worker>",
   "main": "@astrojs/cloudflare/entrypoints/server",
   "assets": {
     "directory": "./dist",
-    "binding": "ASSETS",
+    "binding": "ASSETS"
   },
   "observability": {
     "enabled": true,
     "logs": {
-      "enabled": true,
-    },
-  },
+      "enabled": true
+    }
+  }
 }

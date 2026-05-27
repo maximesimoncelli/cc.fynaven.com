@@ -3,14 +3,17 @@ import { join } from "node:path";
 import type { JSONLayerPack } from "./src/entities/images";
 import { loadEnv } from "vite";
 
-const { PUBLIC_MEDIA_URL } = loadEnv(
-  process.env.NODE_ENV ?? "development",
-  process.cwd(),
-  "",
-);
+const {
+  PUBLIC_MEDIA_URL,
+  PRIVATE_WRANGLER_COMPATIBILITY_DATE,
+  PRIVATE_WRANGLER_COMPATIBILITY_FLAGS,
+  PRIVATE_WRANGLER_WORKER_NAME,
+} = loadEnv(process.env.NODE_ENV ?? "development", process.cwd(), "");
+
+const ROOT_PATH = process.cwd();
 
 export function processPacksForBuild() {
-  const packsDir = join(process.cwd(), "./src/content/packs");
+  const packsDir = join(ROOT_PATH, "./src/content/packs");
 
   const packFiles = readdirSync(packsDir, { recursive: true }).filter(
     (file) => typeof file === "string" && file.endsWith("index.json"),
@@ -35,4 +38,31 @@ export function processPacksForBuild() {
   }
 }
 
+export function processWranglerJSON() {
+  const configurationFiles = {
+    wrangler: {
+      source: join(ROOT_PATH, "wrangler.example.jsonc"),
+      destination: join(ROOT_PATH, "wrangler.jsonc"),
+    },
+  };
+
+  const replaceMap = new Map<string, string | string[]>([
+    ["compatibility_date", PRIVATE_WRANGLER_COMPATIBILITY_DATE],
+    ["compatibility_flags", PRIVATE_WRANGLER_COMPATIBILITY_FLAGS.split(",")],
+    ["name", PRIVATE_WRANGLER_WORKER_NAME],
+  ]);
+
+  let exampleFileContent = JSON.parse(
+    readFileSync(configurationFiles.wrangler.source, "utf-8"),
+  );
+  replaceMap.forEach((value, key) => {
+    exampleFileContent[key] = value;
+  });
+  writeFileSync(
+    configurationFiles.wrangler.destination,
+    JSON.stringify(exampleFileContent, null, 2),
+  );
+}
+
 processPacksForBuild();
+processWranglerJSON();
