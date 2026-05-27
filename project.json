@@ -111,14 +111,16 @@
       "executor": "nx:run-commands",
       "options": {
         "command": "wrangler deploy"
-      }
+      },
+      "cache": false
     },
     "wrangler:version-upload": {
       "dependsOn": ["astro:build"],
       "executor": "nx:run-commands",
       "options": {
         "command": "pnpm wrangler versions upload"
-      }
+      },
+      "cache": false
     }
   }
 }
