@@ -2,8 +2,8 @@
   "title": "Element Pack 1 - Shakespeare's Frames",
   "slug": "element-pack-1-shakespeares-frames",
   "type": "elements",
-  "source": "Shakespeare - Théâtre Complet (Éditions Favot 1975). Credits mentions that the illustrations come from books from various national library without details.",
-  "cover": "./cover.jpg",
+  "source": "Shakespeare - Théâtre Complet (Éditions Famot). Credits mentions that the illustrations come from books from various national library without details.",
+  "cover": "https://media.fynaven.com/element-pack-1-shakespeares-frames/cover.jpg",
   "downloadLink": "https://ko-fi.com/s/6ae049f909",
   "publishedAt": "2025-09-21",
   "images": [
@@ -21,7 +21,12 @@
         "rectangular",
         "symmetrical"
       ],
-      "description": "An intricate, highly decorative woodcut border frame featuring vintage renaissance floral motifs."
+      "description": "An intricate, highly decorative woodcut border frame featuring vintage renaissance floral motifs.",
+      "width": 810,
+      "height": 1072,
+      "originalWidth": 9239,
+      "originalHeight": 12230,
+      "format": "png"
     },
     {
       "link": "./files/flourish.png",
@@ -36,7 +41,12 @@
         "floral",
         "symmetrical"
       ],
-      "description": "A decorative typographic flourish used for text separation and ornamentation."
+      "description": "A decorative typographic flourish used for text separation and ornamentation.",
+      "width": 810,
+      "height": 662,
+      "originalWidth": 2744,
+      "originalHeight": 2241,
+      "format": "png"
     },
     {
       "link": "./files/horned-cornucopias-frame.png",
@@ -52,14 +62,24 @@
         "cornucopias",
         "symmetrical"
       ],
-      "description": "A classic ornamental border featuring horned cornucopias spilling fruits and foliage."
+      "description": "A classic ornamental border featuring horned cornucopias spilling fruits and foliage.",
+      "width": 810,
+      "height": 847,
+      "originalWidth": 7000,
+      "originalHeight": 7316,
+      "format": "png"
     },
     {
       "link": "./files/minimal-frame.png",
       "slug": "minimal-frame",
       "name": "Minimal Frame",
       "tags": ["element", "simple", "frame", "rectangular", "symmetrical"],
-      "description": "A simple rectangular frame."
+      "description": "A simple rectangular frame.",
+      "width": 810,
+      "height": 1044,
+      "originalWidth": 8679,
+      "originalHeight": 11190,
+      "format": "png"
     },
     {
       "link": "./files/separator-1.png",
@@ -74,7 +94,12 @@
         "face",
         "symmetrical"
       ],
-      "description": "An ornate horizontal text divider block featuring classic floral designs."
+      "description": "An ornate horizontal text divider block featuring classic floral designs.",
+      "width": 810,
+      "height": 276,
+      "originalWidth": 8231,
+      "originalHeight": 2801,
+      "format": "png"
     },
     {
       "link": "./files/separator-2.png",
@@ -89,7 +114,12 @@
         "face",
         "symmetrical"
       ],
-      "description": "A detailed horizontal text decoration with symmetrical leaf patterns, an ornate crown and what looks like thistles."
+      "description": "A detailed horizontal text decoration with symmetrical leaf patterns, an ornate crown and what looks like thistles.",
+      "width": 810,
+      "height": 351,
+      "originalWidth": 8455,
+      "originalHeight": 3666,
+      "format": "png"
     },
     {
       "link": "./files/separator-3.png",
@@ -105,7 +135,12 @@
         "rectangular",
         "symmetrical"
       ],
-      "description": "A rectangular typographic border element designed for separating sections of text."
+      "description": "A rectangular typographic border element designed for separating sections of text.",
+      "width": 810,
+      "height": 143,
+      "originalWidth": 11000,
+      "originalHeight": 1936,
+      "format": "png"
     },
     {
       "link": "./files/top-frame.png",
@@ -120,7 +155,12 @@
         "ornament",
         "intricate"
       ],
-      "description": "An open frame header illustration."
+      "description": "An open frame header illustration.",
+      "width": 810,
+      "height": 338,
+      "originalWidth": 7775,
+      "originalHeight": 3247,
+      "format": "png"
     },
     {
       "link": "./files/vase.png",
@@ -135,7 +175,12 @@
         "flowers",
         "sunflower"
       ],
-      "description": "A classic woodcut illustration of an ornamental vase holding decorative foliage."
+      "description": "A classic woodcut illustration of an ornamental vase holding decorative foliage.",
+      "width": 810,
+      "height": 602,
+      "originalWidth": 5428,
+      "originalHeight": 4034,
+      "format": "png"
     },
     {
       "link": "./files/vertical-separator.png",
@@ -151,14 +196,24 @@
         "floral",
         "symmetrical"
       ],
-      "description": "A slender vertical decorative border element for separating columns or margins."
+      "description": "A slender vertical decorative border element for separating columns or margins.",
+      "width": 54,
+      "height": 1000,
+      "originalWidth": 589,
+      "originalHeight": 11000,
+      "format": "png"
     },
     {
       "link": "./files/w-drop-capital.png",
       "slug": "w-drop-capital",
       "name": "W Drop Capital",
       "tags": ["element"],
-      "description": "A richly decorated drop capital letter 'W'."
+      "description": "A richly decorated drop capital letter 'W'.",
+      "width": 810,
+      "height": 771,
+      "originalWidth": 3988,
+      "originalHeight": 3794,
+      "format": "png"
     }
   ]
 }

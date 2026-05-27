@@ -15,6 +15,7 @@
   "scripts": {
     "dev": "pnpm nx run -t astro:dev",
     "build": "pnpm nx run -t astro:build",
+    "preview": "pnpm nx run -t astro:preview",
     "deploy": "pnpm nx run -t wrangler:deploy",
     "full:check": "pnpm nx run -t full:check",
     "ci:check": "pnpm nx run -t ci:check",

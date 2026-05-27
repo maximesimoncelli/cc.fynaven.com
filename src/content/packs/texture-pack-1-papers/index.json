@@ -3,7 +3,7 @@
   "slug": "texture-pack-1-papers",
   "type": "textures",
   "source": "Scanned papers.",
-  "cover": "./cover.jpg",
+  "cover": "https://media.fynaven.com/texture-pack-1-papers/cover.jpg",
   "downloadLink": "https://ko-fi.com/s/78a836d8e3",
   "publishedAt": "2025-08-15",
   "images": [
@@ -20,7 +20,12 @@
         "scratches",
         "folds"
       ],
-      "description": "A high-resolution texture of folded paper showing prominent crease lines and wear."
+      "description": "A high-resolution texture of folded paper showing prominent crease lines and wear.",
+      "width": 810,
+      "height": 1128,
+      "originalWidth": 9808,
+      "originalHeight": 13664,
+      "format": "jpeg"
     },
     {
       "link": "./files/crinkled-dark-paper-1.jpg",
@@ -36,7 +41,12 @@
         "crinkles",
         "volume"
       ],
-      "description": "A textured black paper sheet with light crinkling and dynamic highlights."
+      "description": "A textured black paper sheet with light crinkling and dynamic highlights.",
+      "width": 810,
+      "height": 1146,
+      "originalWidth": 5555,
+      "originalHeight": 7856,
+      "format": "jpeg"
     },
     {
       "link": "./files/crinkled-dark-paper-2.jpg",
@@ -52,7 +62,12 @@
         "crinkles",
         "volume"
       ],
-      "description": "A textured black paper sheet with heavy crinkling and dynamic highlights."
+      "description": "A textured black paper sheet with heavy crinkling and dynamic highlights.",
+      "width": 810,
+      "height": 1027,
+      "originalWidth": 5718,
+      "originalHeight": 7250,
+      "format": "jpeg"
     },
     {
       "link": "./files/jcard-creases-back.jpg",
@@ -67,7 +82,12 @@
         "jcard",
         "cassette"
       ],
-      "description": "A scanned sheet of paper creased with Jcard lines"
+      "description": "A scanned sheet of paper creased with Jcard lines",
+      "width": 810,
+      "height": 1146,
+      "originalWidth": 5492,
+      "originalHeight": 7767,
+      "format": "jpeg"
     },
     {
       "link": "./files/jcard-creases-front.jpg",
@@ -82,14 +102,24 @@
         "jcard",
         "cassette"
       ],
-      "description": "A scanned sheet of paper creased with Jcard lines"
+      "description": "A scanned sheet of paper creased with Jcard lines",
+      "width": 810,
+      "height": 1144,
+      "originalWidth": 5529,
+      "originalHeight": 7808,
+      "format": "jpeg"
     },
     {
       "link": "./files/plain-black-with-wash-marks.jpg",
       "slug": "plain-black-with-wash-marks",
       "name": "Plain Black With Wash Marks",
       "tags": ["texture", "paper", "grey", "black-and-white", "washes"],
-      "description": "A plain black sheet of paper with a few wash marks."
+      "description": "A plain black sheet of paper with a few wash marks.",
+      "width": 810,
+      "height": 1264,
+      "originalWidth": 4802,
+      "originalHeight": 7494,
+      "format": "jpeg"
     }
   ]
 }

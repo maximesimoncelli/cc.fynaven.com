@@ -16,7 +16,7 @@ export const GET: APIRoute = async ({ site }) => {
         author: "Sylfvr",
         categories: [`${pack.type.at(0)?.toUpperCase()}${pack.type.slice(1)}`],
         description: pack.source,
-        content: `<div>${pack.source}</div><div><img src="${PUBLIC_URL}${(await getImage({ src: pack.cover, width: 700 })).src}" /></div>`,
+        content: `<div>${pack.source}</div><div><img src="${PUBLIC_URL}${(await getImage({ src: pack.cover, width: 600, height: 600 })).src}" /></div>`,
         link: `${PUBLIC_URL}/packs/${pack.slug}`,
         title: pack.title,
         pubDate: new Date(pack.publishedAt),

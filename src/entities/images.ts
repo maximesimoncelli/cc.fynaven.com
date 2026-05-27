@@ -18,6 +18,11 @@ export interface JSONLayerPack {
     link: string;
     slug: string;
     name: string;
+    width: number;
+    height: number;
+    originalWidth: number;
+    originalHeight: number;
+    format: string;
     artists: string[];
     description: string;
   }>;
@@ -33,6 +38,11 @@ export interface DataLayerPack {
     link: ImageMetadata;
     slug: string;
     name: string;
+    width: number;
+    height: number;
+    originalWidth: number;
+    originalHeight: number;
+    format: string;
     artists: DataLayerArtist[];
     description: string;
   }>;
@@ -59,6 +69,11 @@ export function dataLayerPackSchema(image: ImageFunction) {
         link: image(),
         slug: z.string(),
         name: z.string(),
+        width: z.number(),
+        height: z.number(),
+        originalWidth: z.number(),
+        originalHeight: z.number(),
+        format: z.string(),
         source: z.string().optional(),
         tags: z.array(reference("tags")),
         artists: z

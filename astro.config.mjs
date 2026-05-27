@@ -6,7 +6,7 @@ import tailwindcss from "@tailwindcss/vite";
 import { defineConfig, envField, fontProviders } from "astro/config";
 import { loadEnv } from "vite";
 
-const { PUBLIC_URL, PUBLIC_MEDIA_URL } = loadEnv(
+const { PUBLIC_URL, PUBLIC_MEDIA_URL, PUBLIC_MEDIA_DOMAIN } = loadEnv(
   process.env.NODE_ENV ?? "development",
   process.cwd(),
   "",
@@ -30,7 +30,7 @@ export default defineConfig({
     },
   },
   image: {
-    domains: [PUBLIC_MEDIA_URL],
+    domains: [PUBLIC_MEDIA_DOMAIN],
   },
   site: PUBLIC_URL,
   fonts: [

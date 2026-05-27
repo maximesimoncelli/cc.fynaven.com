@@ -7,15 +7,18 @@
     "prepare:build": {
       "executor": "nx:run-commands",
       "options": {
-        "command": "node scripts/build.ts"
+        "command": "node scripts/build.ts -e",
+        "envFile": "{projectRoot}/.env.production"
       },
       "inputs": [
+        "{projectRoot}/scripts/build.ts",
         "{projectRoot}/src/content/packs/**/index.json",
         "{projectRoot}/wrangler.example.jsonc"
       ],
       "cache": true,
       "outputs": [
         "{projectRoot}/src/content/packs/**/index.build.json",
+        "{projectRoot}/src/content/packs/**/index.json",
         "{projectRoot}/wrangler.jsonc"
       ]
     },

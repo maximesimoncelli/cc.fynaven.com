@@ -41,10 +41,10 @@ const numberOfColumns = {
                 ? `background: url(${dustProcessed.src}); background-size: auto;`
                 : ""
             }
+            width={image.width}
+            height={image.height}
             src={image.link}
             alt={image.name}
-            width={400}
-            quality={80}
             layout="constrained"
             loading="lazy"
           />
