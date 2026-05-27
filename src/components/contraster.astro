@@ -2,36 +2,84 @@
 import { Check } from "@lucide/astro";
 ---
 
-<label
-  class="sticky top-15 z-10 flex cursor-pointer items-center gap-2 bg-olive-100 p-2 text-xs select-none dark:bg-mist-950"
-  id="contrast-node"
-  for="contrast"
+<div
+  class="sticky top-15 z-10 flex items-center gap-2 bg-olive-100 dark:bg-mist-950"
 >
-  <input
-    class="hidden"
-    type="checkbox"
-    name="contrast"
-    alt="More contrast on transparent png pictures"
-    id="contrast"
-    checked
-  />
-  <div
-    class="flex h-3.5 w-3.5 items-center rounded-sm bg-olive-200 dark:bg-mist-800"
+  <label
+    class="flex cursor-pointer items-center gap-2 p-2 text-xs select-none"
+    id="contrast-node"
+    for="contrast"
   >
-    <Check id="checkmark" class="text-olive-700 dark:text-olive-400" />
-  </div>
+    <input
+      class="hidden"
+      type="checkbox"
+      name="contrast"
+      alt="More contrast on transparent png pictures"
+      id="contrast"
+      checked
+    />
+    <div
+      class="flex h-3.5 w-3.5 items-center rounded-sm bg-olive-200 dark:bg-mist-800"
+    >
+      <Check
+        id="checkmark-contrast"
+        class="text-olive-700 dark:text-olive-400"
+      />
+    </div>
 
-  Apply more contrast to transparent pngs.
-</label>
+    Apply more contrast to transparent pngs.
+  </label>
+  <label
+    class="sticky top-15 z-10 flex cursor-pointer items-center gap-2 bg-olive-100 p-2 text-xs select-none dark:bg-mist-950"
+    id="contrast-node"
+    for="luminosity"
+    title="Can help better see dark pictures"
+  >
+    <input
+      class="hidden"
+      type="checkbox"
+      name="luminosity"
+      alt="More luminosity on pictures"
+      id="luminosity"
+    />
+    <div
+      class="flex h-3.5 w-3.5 items-center rounded-sm bg-olive-200 dark:bg-mist-800"
+    >
+      <Check
+        id="checkmark-luminosity"
+        class="invisible text-olive-700 dark:text-olive-400"
+      />
+    </div>
+
+    Increase luminosity
+  </label>
+</div>
 
 <script>
   document.addEventListener("astro:page-load", () => {
     const contrasterSetting =
       window.localStorage.getItem("contraster") ??
-      window.localStorage.setItem("contraster", "show");
+      (() => {
+        window.localStorage.setItem("contraster", "show");
+        return window.localStorage.getItem("contraster");
+      })();
+
+    const luminositySetting =
+      window.localStorage.getItem("luminosity") ??
+      (() => {
+        window.localStorage.setItem("luminosity", "decrease");
+        return window.localStorage.getItem("luminosity");
+      })();
+
+    const luminosity = document.querySelector<HTMLInputElement>("#luminosity");
+    const checkmarkLuminosity = document.querySelector<HTMLElement>(
+      "#checkmark-luminosity",
+    );
 
     const contrast = document.querySelector<HTMLInputElement>("#contrast");
-    const checkmark = document.querySelector<HTMLElement>("#checkmark");
+    const checkmarkContrast = document.querySelector<HTMLElement>(
+      "#checkmark-contrast",
+    );
     const images = document.querySelectorAll(".image");
 
     if (contrast) {
@@ -40,13 +88,13 @@ import { Check } from "@lucide/astro";
         for (let image of images) {
           image.classList.remove("bg-none!");
         }
-        checkmark?.classList.remove("invisible");
+        checkmarkContrast?.classList.remove("invisible");
       } else {
         contrast.checked = false;
         for (let image of images) {
           image.classList.add("bg-none!");
         }
-        checkmark?.classList.add("invisible");
+        checkmarkContrast?.classList.add("invisible");
       }
 
       contrast.addEventListener("change", () => {
@@ -55,13 +103,45 @@ import { Check } from "@lucide/astro";
           for (let image of images) {
             image.classList.remove("bg-none!");
           }
-          checkmark?.classList.remove("invisible");
+          checkmarkContrast?.classList.remove("invisible");
         } else {
           window.localStorage.setItem("contraster", "hide");
           for (let image of images) {
             image.classList.add("bg-none!");
           }
-          checkmark?.classList.add("invisible");
+          checkmarkContrast?.classList.add("invisible");
+        }
+      });
+    }
+
+    if (luminosity) {
+      if (luminositySetting === "increase") {
+        luminosity.checked = true;
+        for (let image of images) {
+          image.classList.add("brightness-200");
+        }
+        checkmarkLuminosity?.classList.remove("invisible");
+      } else {
+        luminosity.checked = false;
+        for (let image of images) {
+          image.classList.remove("brightness-200");
+        }
+        checkmarkLuminosity?.classList.add("invisible");
+      }
+
+      luminosity.addEventListener("change", () => {
+        if (luminosity.checked) {
+          window.localStorage.setItem("luminosity", "increase");
+          for (let image of images) {
+            image.classList.add("brightness-200");
+          }
+          checkmarkLuminosity?.classList.remove("invisible");
+        } else {
+          window.localStorage.setItem("luminosity", "decrease");
+          for (let image of images) {
+            image.classList.remove("brightness-200");
+          }
+          checkmarkLuminosity?.classList.add("invisible");
         }
       });
     }
