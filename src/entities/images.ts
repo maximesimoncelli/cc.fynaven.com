@@ -8,6 +8,21 @@ import type { ImageMetadata } from "astro";
 import { z } from "astro/zod";
 import type { DataLayerArtist } from "./artists";
 
+export interface JSONLayerPack {
+  title: string;
+  slug: string;
+  type: string;
+  source: string;
+  cover: string;
+  images: Array<{
+    link: string;
+    slug: string;
+    name: string;
+    artists: string[];
+    description: string;
+  }>;
+}
+
 export interface DataLayerPack {
   title: string;
   slug: string;

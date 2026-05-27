@@ -4,8 +4,20 @@
   "projectType": "application",
   "sourceRoot": "src",
   "targets": {
+    "prepare:build": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "node build.ts"
+      },
+      "cache": true,
+      "outputs": ["{projectRoot}/src/content/packs/**/index.build.json"]
+    },
     "astro:build": {
+      "configurations": {
+        "production": {}
+      },
       "dependsOn": [
+        "prepare:build",
         "wrangler:types",
         "astro:check",
         "eslint:lint",

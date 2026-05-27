@@ -32,6 +32,8 @@ wrangler.jsonc
 # Scripts
 upload-to-r2.mjs
 
+# Build artifacts
+src/content/packs/**/index.build.json
 
 # Large Images
 src/content/packs/**/*.jpg
