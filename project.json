@@ -9,8 +9,15 @@
       "options": {
         "command": "node build.ts"
       },
+      "inputs": [
+        "{projectRoot}/src/content/packs/**/index.json",
+        "{projectRoot}/.wrangler.example.jsonc"
+      ],
       "cache": true,
-      "outputs": ["{projectRoot}/src/content/packs/**/index.build.json"]
+      "outputs": [
+        "{projectRoot}/src/content/packs/**/index.build.json",
+        "{projectRoot}/.wrangler.jsonc"
+      ]
     },
     "astro:build": {
       "configurations": {
