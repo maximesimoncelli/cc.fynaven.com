@@ -83,7 +83,8 @@ const title = `${img.name} - ${collection.source}`;
           <OrigamiIcon />
           <Bold>Source</Bold>
         </div>
-        {img.source ?? collection.source}
+        <p>{img.source ?? collection.source}</p>
+        <p>{collection?.sourceDetails}</p>
       </div>
 
       {

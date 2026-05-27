@@ -3,7 +3,7 @@
   "slug": "texture-pack-1-papers",
   "type": "textures",
   "source": "Scanned papers.",
-  "cover": "https://media.fynaven.com/texture-pack-1-papers/cover.jpg",
+  "cover": "./cover.jpg",
   "downloadLink": "https://ko-fi.com/s/78a836d8e3",
   "publishedAt": "2025-08-15",
   "images": [

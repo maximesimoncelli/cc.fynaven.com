@@ -2,8 +2,9 @@
   "title": "Element Pack 1 - Shakespeare's Frames",
   "slug": "element-pack-1-shakespeares-frames",
   "type": "elements",
-  "source": "Shakespeare - Théâtre Complet (Éditions Famot). Credits mentions that the illustrations come from books from various national library without details.",
-  "cover": "https://media.fynaven.com/element-pack-1-shakespeares-frames/cover.jpg",
+  "source": "Shakespeare - Théâtre Complet (Éditions Famot).",
+  "sourceDetails": "Credits mentions that the illustrations come from books from various national library without details.",
+  "cover": "./cover.jpg",
   "downloadLink": "https://ko-fi.com/s/6ae049f909",
   "publishedAt": "2025-09-21",
   "images": [

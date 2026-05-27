@@ -3,7 +3,7 @@
   "slug": "element-pack-2-golden-frames",
   "type": "elements",
   "source": "Old books covers.",
-  "cover": "https://media.fynaven.com/element-pack-2-golden-frames/cover.jpg",
+  "cover": "./cover.jpg",
   "downloadLink": "https://ko-fi.com/s/80cf13ccd5",
   "publishedAt": "2025-09-28",
   "images": [

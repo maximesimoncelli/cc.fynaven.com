@@ -13,6 +13,7 @@ export interface JSONLayerPack {
   slug: string;
   type: string;
   source: string;
+  sourceDetails?: string;
   cover: string;
   images: Array<{
     link: string;
@@ -33,6 +34,7 @@ export interface DataLayerPack {
   slug: string;
   type: string;
   source: string;
+  sourceDetails?: string;
   cover: ImageMetadata;
   images: Array<{
     link: ImageMetadata;
@@ -61,6 +63,7 @@ export function dataLayerPackSchema(image: ImageFunction) {
     slug: z.string(),
     type: z.enum(Object.values(DataLayerPackType)),
     source: z.string(),
+    sourceDetails: z.string().optional(),
     cover: image(),
     downloadLink: z.string(),
     publishedAt: z.iso.date(),

@@ -8,7 +8,7 @@ const {
   PRIVATE_WRANGLER_COMPATIBILITY_DATE,
   PRIVATE_WRANGLER_COMPATIBILITY_FLAGS,
   PRIVATE_WRANGLER_WORKER_NAME,
-} = loadEnv(process.env.NODE_ENV ?? "development", process.cwd(), "");
+} = loadEnv("production", process.cwd(), "");
 
 const ROOT_PATH = process.cwd();
 

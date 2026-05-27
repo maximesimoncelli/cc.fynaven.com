@@ -1,6 +1,11 @@
 {
-  "cover": "https://media.fynaven.com/illustration-pack-1-astronomy/cover.jpg",
+  "cover": "./cover.jpg",
   "downloadLink": "https://ko-fi.com/s/4736ee6990",
+  "publishedAt": "2026-05-22",
+  "slug": "illustration-pack-1-astronomy",
+  "source": "Astronomie Populaire, by Camille Flammarion, 1880.",
+  "title": "Illustration Pack 1 - Astronomy",
+  "type": "illustrations",
   "images": [
     {
       "description": "An illustration of a hot-air balloon soaring high above a sea of clouds under a clear sky.",
@@ -285,10 +290,5 @@
       "originalHeight": 12243,
       "format": "jpeg"
     }
-  ],
-  "publishedAt": "2026-05-22",
-  "slug": "illustration-pack-1-astronomy",
-  "source": "Astronomie Populaire, by Camille Flammarion, 1880.",
-  "title": "Illustration Pack 1 - Astronomy",
-  "type": "illustrations"
+  ]
 }
