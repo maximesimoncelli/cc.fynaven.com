@@ -19,8 +19,7 @@
     "deploy": "pnpm nx run -t wrangler:deploy",
     "full:check": "pnpm nx run -t full:check",
     "ci:check": "pnpm nx run -t ci:check",
-    "prepare": "husky",
-    "postinstall": "node scripts/install.ts"
+    "prepare": "husky"
   },
   "dependencies": {
     "@astrojs/check": "^0.9.9",

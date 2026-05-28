@@ -43,7 +43,7 @@ const title = `${img.name} - ${collection.source}`;
       <Image
         src={img.link}
         alt={img.description}
-        style={img.link.format === "png"
+        style={img.format === "png"
           ? `background: url(${dustProcessed.src}); background-size: auto;`
           : ""}
         width={img.width}
